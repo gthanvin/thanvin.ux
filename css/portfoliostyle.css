@@ -1,0 +1,509 @@
+/*Global styles---------------------------------------------
+------------------------------------------------------------*/
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+} 
+
+.content-wrap {
+    max-width: 1300px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, li {
+    color: rgba(41,47,54,100%);
+}
+
+p {
+    color: black;
+}
+
+.white-text {
+    color: rgba(235,242,250,100%);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+p, li {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+a {
+    color: rgba(41,47,54,100%);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+a:hover {
+    color: rgba(41,47,54,75%);
+    text-decoration: none;
+}
+
+.menulink {
+    padding: 0;
+}
+
+.in-text-link {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.standard-img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.white-button {
+    text-decoration: none;
+    color: rgba(41,47,54,100%);
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    background-color: rgba(235,242,250,100%);
+    box-shadow: 5px 8px 8px rgba(40,27,0,8%)
+}
+
+.white-button:hover {
+    color: rgba(41,47,54,100%);
+    background-color: rgba(235,242,250,75%);
+}
+
+.black-button {
+    text-decoration: none;
+    color:  rgba(235,242,250,100%);
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 100px;
+    background-color: rgba(41,47,54,100%);
+    box-shadow: 5px 8px 8px rgba(40,27,0,8%)
+}
+
+.black-button:hover {
+    color:  rgba(235,242,250,100%);
+    background-color: rgba(41,47,54,75%);
+}
+
+hr.divider {
+    border-top: 1px solid rgba(41,47,54,50%);
+}
+
+.bullets-removed {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Nav-----------------------------------------------
+-----------------------------------------------------------*/
+
+.header {
+    justify-content: right;
+    z-index: 3;
+}
+  
+.header ul {
+    text-align: right;
+    list-style: none;
+    overflow: hidden;
+}
+  
+.header li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+  
+  /* menu */
+  
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+  
+  /* menu icon */
+  
+.header .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 50px 0px 25px 25px;
+    position: relative;
+}
+  
+.header .menu-icon .navicon {
+    background: rgba(41,47,54,100%);
+    display: block;
+    width: 25px;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: rgba(41,47,54,100%);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 7px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -7px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(45deg)
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(-45deg)
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+
+/*Intro---------------------------------------------
+------------------------------------------------------------*/
+
+
+.yellow {
+    background-image: url(../images/UX-designer-yellow-background.jpg);
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.intro {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+/*Work---------------------------------------------
+------------------------------------------------------------*/
+
+.white {
+    background-color: rgba(235,242,250,100%);
+    overflow: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.work-pic {
+    width: 100%;
+    max-width: 630px;
+    height: auto;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+/*Footer---------------------------------------
+-----------------------------------------------*/
+
+footer {
+    background-color: rgba(41,47,54,100%);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    overflow: hidden;
+}
+
+.contact {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.letschat {
+    text-align: right;
+    padding-right: 24px;
+}
+
+.contact a {
+    padding: 24px;
+}
+
+/*ABOUT ME--------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------*/
+
+.about-me {
+    background-color: rgba(235,242,250,100%);
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    float: left;
+}
+
+.left25 {
+    width: 25%;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.right75 {
+    width: 75%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.interests {
+    background-image: url(../images/about-me-cover.jpg);
+    background-size: cover;
+    background-position: bottom;
+    overflow: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/*EquiPPE------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------*/
+
+.news-clippings {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.left50 {
+    width: 50%;
+}
+
+.right50 {
+    width: 50%;
+}
+
+.logo {
+    max-width: 300px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Responsive------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------*/
+
+@media screen and (max-width:414px){
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    p, li {
+        font-size: 20px;
+    }
+    
+    a {
+        font-size: 20px;
+    }
+
+    .in-text-link {
+        font-size: 20px;
+    }
+    
+    .intro {
+        padding-top: 25px;
+        padding-bottom: 100px;
+    }
+
+    .white {
+        padding-top: 75px;
+        padding-bottom: 100px;
+    }
+   
+    .contact {
+        justify-content: center;
+    }
+    
+    .letschat {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:750px){
+    .yellow {
+        background-image: url(../images/UX-designer-yellow-background-mobile.jpg);
+        background-position: right;
+    }
+}
+
+@media screen and (max-width:900px){
+    .row {
+        display: block;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .left {
+        margin-right: 0;
+    }
+
+    .interests {
+        background-image: url(../images/about-me-cover-mobile.jpg);
+        padding-top: 75px;
+        padding-bottom: 300px;
+    }
+}
+
+@media screen and (max-width:1138px){
+    
+    .work-pic {
+        width: 100%;
+        max-width: 947px;
+        height: auto;
+    }
+}
+
+/*Animation------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------*/
+
+body {
+    animation: transitionIn 1s;
+}
+
+#myLinks {
+    animation: dropdown 0.5s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes dropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

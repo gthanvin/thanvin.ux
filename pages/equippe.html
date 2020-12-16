@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquiPPE</title>
+    <meta name="description" content="A platform that helps direct PPE donations to essential organizations in need.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/portfoliostyle.css">
+</head>
+
+
+<body>
+
+    <section class="equippe-banner">
+       
+        <header class="content-wrap header">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a class="menulink" href="../index.html">HOME</a></li>
+              <li><a class="menulink" href="../pages/aboutme.html">ABOUT ME</a></li>
+              <li><a class="menulink" href="#about">THOUGHTS</a></li>
+            </ul>
+        </header>
+
+    </section>
+
+
+    <section class="content-wrap">
+
+        <img class="standard-img" src="../images/equippe-mockup-1.jpg" alt="EquiPPE mockup cover">
+        <h1>EquiPPE</h1>
+        <br>
+        <a class="black-button" href="#prototype">JUMP TO PROTOTYPE</a>
+        <br>
+        <br>
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h4>Project duration &#128197</h4>
+        <p>May-Sept., 2020</p>
+        <br>
+        <h4>Project goals &#127919</h4>
+        <p>For my first UX project, I wished to take on something that was relevant to the time, required me to generate a
+            solution that is thorough and comprehensive, and challenged me to explore the user-centered design process starting
+            from research to creating a high-fidelity prototype.</p>
+        <br>
+        <h4>Tools &#128295</h4>
+        <p>Figma, Photoshop, Illustrator</p>
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2>Discovery and research</h2>
+        <br>
+        <h4>Context</h4>
+        <p>I started this project in May, 2020 when the world was grappling with the early stages of the COVID-19 pandemic. During
+            this time, severe personal protective equipment (PPE) shortages impacted essential organizations (EOs
+            from here on) across North America. To help alleviate this burden, individuals and companies generously donated PPE
+            to local EOs in need.</p>
+        <br>
+
+        <h4>But...problem</h4>
+        <div class="row">
+            <div class="column left50">
+                <a href="https://www.politico.com/states/new-york/albany/story/2020/04/02/shelter-providers-say-lack-of-protective-gear-puts-workers-and-homeless-in-danger-1270315" target="_blank"><img class="news-clippings" src="../images/Politico-New-York.JPG" alt="Shelter providers say lack of protective gear puts workers and homeless in danger."></a>
+                <a href="https://globalnews.ca/news/6813399/coronavirus-north-america-meat-plants/" target="_blank"><img class="news-clippings" src="../images/Global-News.JPG" alt="Meat plant workers in US, Canada worry about elbow to elbow work, lack of PPE."></a>
+                <a href="https://www.npr.org/sections/health-shots/2020/03/20/818600557/mask-shortage-straps-pharmacists-who-need-them-to-keep-medicines-pure" target="_blank"><img class="news-clippings" src="../images/NPR.JPG" alt="Mask shortages straps pharmacists who need them to keep medicines pure."></a>
+            </div>
+            <div class="column right50">
+                <a href="https://www.nydailynews.com/coronavirus/ny-coronavirus-homeless-services-protective-gear-20200402-useuckptjncq5g2oeqwbcvw724-story.html" target="_blank"><img class="news-clippings" src="../images/NY-Daily-News.JPG" alt="NYC homeless services workers hit with coronavirus are dropping like flies without protective gear."></a>
+                <a href="https://www.waste360.com/labor-relations/sanitation-workers-struggle-lack-ppe" target="_blank"><img class="news-clippings" src="../images/Waste-360.JPG" alt="Sanitation workers struggle with lack of PPE."></a>
+                <a href="https://www.bostonglobe.com/2020/03/20/metro/some-first-responders-struggling-get-masks-personal-protective-equipment/" target="_blank"><img class="news-clippings" src="../images/Boston-Globe.JPG" alt="Some first responders struggling to get masks, personal protective equipment."></a>
+            </div>
+        </div>
+
+        <p>Despite outpouring support, there were instances of homeless shelters, municipal sanitation, food processing plants,
+            pharmacies, and emergency services, among others that struggled to secure the bare minimum to ensure a relatively
+            safe work environment. While I recognize that PPE quantities are finite, I wondered if a more equitable distribution
+            of PPE donations would help prevent such instances. I hypothesized and shortlisted four factors potentially
+            contributing to the issue.</p>
+        <ul>
+            <li>Limited mainstream media coverage of PPE needs of non-healthcare EOs</li>
+            <li>EOs do not have a go-to platform to voice their needs to PPE donors</li>
+            <li>Donors are unsure or unaware of local EOs in need of PPE</li>
+            <li>Donors are only donating to EOs they are familiar with or have heard of</li>
+        </ul>
+        <br>
+        <div class="row">
+            <div class="column left25">
+                <p>To get a better understanding, I surveyed 12 PPE donors (aged 22 to 54). Although a smaller sample size, my findings
+                    suggested that donors are willing to donate PPE to EOs other than the ones they donated to, had they known.
+                    Proximity and line of work carried the greatest importance when it comes to deciding where to donate.</p>
+            </div>
+            <div class="column right75">
+                <img class="standard-img" src="../images/PPE-donor-survey.png" alt="PPE donor survey">
+            </div>
+        </div>
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2>User personas</h2>
+        <br>
+        <p>I used news articles of people interviewed on behalf of EOs experiencing PPE shortages, as well as sentiments shared
+            by PPE donors I surveyed, to generate two user personas – Lori and Nathan.</p>
+        <img class="standard-img" src="../images/Lori-card.png" alt="User persona">
+        <img class="standard-img" src="../images/Nathan-card.png" alt="User persona">
+        <br>
+        <br>
+        <hr class="divider">
+        <br>
+    
+        <h2>Proposed solution</h2>
+        <br>
+        <p>Design an app that would help direct PPE donations to EOs in need by:</p>
+        <ol>
+            <li>Allowing EOs (including healthcare) to submit requests for PPE they desperately need</li>
+            <li>Displaying requests to local PPE donors so they are aware and may consider donating</li>
+            <li>Ensuring a donation process that is direct and convenient</li>
+        </ol>
+        <br>
+        <h4>Comparable services</h4>
+        <p>Here are two (of many) existing services that share similar goals.</p>
+        <br>
+        <p><em>Get Us PPE</em><br>
+            During the planning stages back in May, I came across <a class="in-text-link" href="https://getusppe.org/" target="_blank">getusppe.org</a>, a website founded by medical professionals in
+            the US whose aim was to facilitate PPE donations to hospitals that need it most. Get Us PPE helped me understand the
+            details required to ensure a successful donation process, which I adapted to suit my app’s framework. They have
+            since expanded to allow PPE requests from select EOs like homeless shelters and social service organizations.
+            Although I found this chart long after I began this project, it illustrates the lopsided nature of PPE shortages.
+        </p>
+        <img class="standard-img" src="../images/Shortage-chart.jpg" alt="PPE shortage chart">
+        <br>
+        <p><em>DonateTO</em><br>
+            An initiative set up by the <a class="in-text-link" href="https://www.toronto.ca/home/covid-19/covid-19-how-you-can-help/covid-19-donateto/covid-19-donation-of-goods-and-services/" target="_blank">City of Toronto</a> in April, where PPE donors may fill out an online form to submit their
+            donation offer. Once an offer is approved, the City directs donors to appropriate EOs in need.
+        </p>
+        <br>
+        <h4>Concerns</h4>
+        <p><em>Misuse of PPE donations</em><br>
+            With reports of unethical stockpiling of PPE, I anticipated that a portion of app users may misuse it to their
+            advantage. To this end, EOs will be asked to identify when signing up, using Google Places API. Further verification
+            may be required if there is a discrepancy between an EO’s official address and the PPE drop-off address specified
+            during onboarding. An EO can only sign up once, and those suspecting an error or fraudulent activity being committed
+            in their name will be able to report the problem.
+        </p>
+        <br>
+        <p><em>Standards and efficacy of donated PPE</em><br>
+            To minimize risk of receiving PPE that do not meet standards or are unsafe for use, EOs can checkoff specification
+            options unique to the PPE they are requesting, as well as specifying whether they accept open boxes. Additionally,
+            donors are asked to correctly identify their PPE, make sure it is unused, and if applicable, are certified, before
+            donating. It ultimately would be an EO’s discretion to use donated PPE.
+        </p>
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2>Goal #1: Requesting PPE</h2>
+        <br>
+        <p>I started by understanding the relevant info that would be needed from EOs, like Second Home, requesting for PPE.</p>
+        <br>
+        <p><em>Number of members</em><br>
+            I was in touch with Seamus O’Hara, the project coordinator of Ontario PPE Collective, which is a network of
+            volunteers who 3D print and distribute face shields to those requesting it. He mentioned he received requests for
+            quantities that were up to 12 times more than what was needed for an EO, as some were unaware that face shields are
+            reusable. To decide on a reasonable quantity, the collective asked to input the organization size when submitting a
+            request.
+        </p>
+        <br>
+        <p><em>Line of work</em><br>
+            Lori can help donors understand how Second Home serves the community (in this case, nonprofit) by selecting from an
+            adapted list of eight categories deemed as essential by the governments of US and Canada.
+        </p>
+        <br>
+        <p><em>PPE ratings and specifications</em><br>
+            Ratings and specifications vary between PPE. In Lori’s case, she prefers hand sanitizers contain minimum 70%
+            alcohol. Certain EOs, like those in healthcare, have stringent guidelines for PPE standards. To this end, having the
+            option to specify these details is critical.
+        </p>
+        <br>
+        <p><em>Request quantities - to specify, or not to specify? That is the question.</em><br>
+            It may seem like a no-brainer to allow EOs to specify the quantities of a PPE they are requesting for. With better
+            understanding and thinking it through, I decided to exclude it for the following reasons:
+            <ul>
+                <li>EOs accept frequently used/disposable PPE on a rolling basis</li>
+                <li>Donors, especially those intending to donate larger quantities, may be misguided if an EO does not proactively
+                    update their requested quantities as they receive donations</li>
+                <li>Proactively updating quantities can be a burden</li>
+                <li>The number of members in an EO is provided to help donors decide their donation quantity</li>
+            </ul>
+        </p>
+        <br>
+        <p><em>Donation drop-off address</em><br>
+            By default, this could be set to Second Home’s address, retrieved from Google Places. It can be changed if an EO prefers to receive donations at an alternate address, although a verification process could be prompted based on:
+            <ul>
+                <li>Proximity between official address and alternate drop-off address</li>
+                <li>Number of requests submitted</li>
+                <li>If the user frequently changes the drop-off address after signing up</li>
+            </ul>
+        </p>
+        <br>
+        <p><em>Donation pick-up</em><br>
+            Second Home, like many EOs, is offering to pick up from donors who may be unable to drop off their donation.
+        </p>
+        <br>
+        <p><em>Request view count</em><br>
+            Once Lori submits a request, having a view count would help her track how many PPE donors have seen it, and may consider donating. 
+        </p>
+        <br>
+        <h4>Goal #1 lo-fi wireframes</h4>
+        <br>
+        <img class="standard-img" src="../images/lo-fi-request.png" alt="Lo fi onboarding and request userflow">
+        <br>
+        <p>Below: Notable iterations based on user feedback (reflected in mid-fi wireframes)</p>
+        <div class="row">
+            <div class="column left50">
+                <img class="standard-img" src="../images/signup-iteration.png" alt="Signup screen iteration">
+            </div>
+            <div class="column right50">
+                <img class="standard-img" src="../images/homepage-iteration.png" alt="Home screen iteration">
+            </div>
+        </div>        
+        <br>        
+        <h4>Goal #1 mid-fi wireframes</h4>
+        <br>
+        <img class="standard-img" src="../images/mid-fi-request.png" alt="Mid fi onboarding and request userflow">
+        <br>
+        <p>Below: Notable iterations based on user feedback (reflected in final prototype)</p>
+        <br>
+        <div class="row">
+            <div class="column right75">
+                <img class="standard-img" src="../images/catalogue-iteration.png" alt="PPE catalogue iteration">
+            </div>
+        </div>
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2>Goal #2: Find EOs in need</h2>
+        <br>
+        <p>
+            What could be an optimal format to display PPE requests to donors like Nathan? I had the idea of a real-time request
+            feed. During onboarding, donors would enable their location (or input ZIP/postal code) and select PPE they wish to
+            donate, which tailors their feed to show requests from nearby EOs. The feed can also be filtered by distance, line
+            of work, and EOs offering donation pick-up. Through the request feed, donors become aware of local EOs they may not
+            have considered donating to previously.
+        </p>
+        <br>
+        <p><em>Request cards</em><br>
+            Request cards highlight EO details and PPE they are requesting. They would sit slightly elevated over the request
+            feed, cueing donors to tap for further details. Request cards can be saved by donors for later reference.
+        </p>
+        <br>
+        <p><em>EO page</em><br>
+            When tapped, a request card pulls up the respective EO’s page where their PPE requests and donation instructions are available.
+        </p>
+        <br>
+        <h4>Goal #2 lo-fi wireframes</h4>
+        <br>
+        <img class="standard-img" src="../images/lo-fi-donors.png" alt="Lo fi onboarding and donation userflow">
+        <br>
+        <p>Below: Notable iterations based on user feedback (reflected in mid-fi wireframes)</p>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <img class="standard-img" src="../images/request-feed-iteration.png" alt="Request feed iteration">
+            </div>
+        </div> 
+        <br>
+        <h4>Goal #2 mid-fi wireframes</h4>
+        <br>
+        <img class="standard-img" src="../images/mid-fi-donors.png" alt="Mid fi onboarding and donation userflow">
+        <br>
+        <p>Below: Notable iterations based on user feedback (reflected in final prototype)</p>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <img class="standard-img" src="../images/org-page-iteration.png" alt="Organization page iteration">
+            </div>
+        </div> 
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2>Goal #3: Ensuring a convenient donation process</h2>
+        <br>
+        <p>
+            In the initial design and even leading up to the final prototype, donors requesting pick-up would have to arrange by
+            calling or emailing EOs. Although this aspect of the donation experience went unremarked during usability tests, I
+            felt the urge to streamline it further. I went ahead and integrated a ‘Request pick-up’ feature, which allows donors
+            and EOs to arrange pick-ups through just a few screen taps. This proved beneficial as:
+        <ul>
+            <li>Donors can now submit a pick-up request in under 1.5 minutes on average, which would have otherwise taken longer had they called or emailed</li>
+            <li>EOs can confirm pick-up requests at their convenience, import scheduled pick-ups to their phone calendars, and share pick-up details with their drivers</li>
+        </ul>
+        </p>
+        <img class="standard-img" src="../images/pickup-overview.png" alt="Pickup overview">
+        <br>
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2 id="prototype">Final prototype</h2>
+        <br>
+        <h4>See how EquiPPE can help people like Lori and Nathan by testing the user tasks below.</h4>
+        <br>
+        <p>User task #1: Lori requests for face shields and hand sanitizer on behalf of Second Home.</p>
+        <br>
+        <a class="black-button" href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2893%3A2604&scaling=contain" target="_blank">TEST USER TASK #1</a>
+        <br>
+        <br>
+        <br>
+        <p>User task #2: Nathan finds EOs in need of face shields and ear savers, and requests for pick-up.</p>
+        <br>
+        <a class="black-button" href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2893%3A3058&scaling=contain" target="_blank">TEST USER TASK #2</a>
+        <br>
+        <br>
+        <br>
+        <p>User task #3: Lori arranges for Nathan's donation pick-up.</p>
+        <br>
+        <a class="black-button" href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2893%3A3845&scaling=contain" target="_blank">TEST USER TASK #3</a>
+        <br>
+        <br>
+        <br>
+        <p>User task #4: Nathan's donation is picked up.</p>
+        <br>
+        <a class="black-button" href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2902%3A0&scaling=contain" target="_blank">TEST USER TASK #4</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2>Gauging success</h2>
+        <br>
+        <p>The metrics outlined below may be used to gauge whether the main goals of the app are achieved.</p>
+        <br>
+        <div class="row">
+            <div class="column right75">
+                <img class="standard-img" src="../images/metric.JPG" alt="Metric to gauge success">
+            </div>
+        </div> 
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2>Ideas left out/for future consideration</h2>
+        <br>
+        <p><em>Instructions to make PPE</em><br>
+            I floated the idea to include instructions on how to DIY certain PPE items. While this feature may be useful, user
+            feedback suggested otherwise, nor does it align with the main goals of this project.
+        </p>
+        <br>
+        <p><em>Mark requests as fulfilled</em><br>
+            After a usability test, a user suggested that EOs should be able to mark their requests as fulfilled once they no
+            longer wish to receive donations of a PPE item, and I thought this might be a better option over deleting. However,
+            deleting a request should still be an option even if their request was not fulfilled. So then what does it mean to
+            mark a request as fulfilled? Would it be the equivalent of archiving an email? For now, when deleting a request, the
+            app could perhaps prompt a dialogue box asking whether a request was fulfilled.
+        </p>
+        <br>
+        <p><em>Allow essential workers to place requests for themselves</em><br>
+            Currently, only EOs can request for PPE. This was a deliberate decision, as allowing individual essential workers to
+            do the same would require addressing concerns such as identity and occupation verifications, in addition to personal
+            security in the context of donation drop-offs and pick-ups.
+        </p>
+        <br>
+        <p><em>Donation to donor tracing</em><br>
+            Donors would attach a confirmation issued by the app that outlines their contact and donation details. This would
+            allow EOs to inform donors in case their PPE is damaged or unusable.
+        </p>
+        <br>
+        <p><em>Metric for drop-off donations</em><br>
+            The current iteration directs donors to local EOs in need, but cannot confirm whether drop-offs are actually made.
+            The donation to donor tracing system discussed above, if implemented, could address this. Another idea is to use a
+            donor’s saved requests to send push notifications asking if they ended up donating to those requests.
+        </p>
+        <br>
+        <p><em>EO verification</em><br>
+            Allows EOs to apply for verification, which would establish their credibility on the app and assure donors their
+            donations will not be misused.
+        </p>
+        <br>
+        <p><em>Optimizing pick-up scheduling and routing</em><br>
+            It would be convenient for EOs to have the app automatically schedule and route pick-ups based on the dates and
+            addresses provided by donors. This would be useful if EOs receive large volumes of pick-up requests.
+        </p>
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2>Visual design</h2>
+        <br>
+        <p><em>Material Design</em><br>
+            Google’s Material Design documentation provided guidance on GUI layout standards and component behaviours, while
+            highlighting their similarities and differences between Android and iOS, which I highly appreciated. I also used its
+            free icon library.
+        </p>
+        <br>
+        <p><em>Logo</em><br>
+            I wanted the logo to represent kindness and protection. I chose to incorporate a face mask, as it became symbolic
+            during this pandemic. To generate ideas, I folded a face mask into different configurations, with most resembling
+            either a paraglider or a bag that drops off PPE. I liked a variation that resembled a heart, which I refined into
+            the minimalistic graphic seen now.
+        </p>
+        <br>
+        <div class="row">
+            <div class="column left25">
+                <img class="standard-img logo" src="../images/equippe-icon.png" alt="EquiPPE logo">
+            </div>
+            <div class="column right75">
+                <img class="standard-img" src="../images/mask-config.jpg" alt="Mask configurations for logo design">
+            </div>
+        </div>
+        <br>
+        <p><em>Colours</em><br>
+            PPE typically come in colours associated with the medical field, such as teal and pastel blue. Using them as base
+            colours, I played around on coolors.co to generate the palette. I contrast checked using WebAIM to ensure important text elements met WCAG standards.
+        </p>
+        <br>
+        <p><em>Typeface</em><br>
+            My typeface choice for this project is Sans Source Pro, obtained through Google Fonts. The relatively taller
+            x-height across its fonts affords more screen real estate and maintains a minimalistic feel, which I was keen on.
+            Other typefaces I considered were Lato, Open Sans, Proxima Nova, and Roboto.
+        </p>
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2>Reflection</h2>
+        <br>
+        <p>I’m proud to have completed my first UX project. In the process, I conducted surveys, reached out to those working on
+            the frontlines, navigated through good and not-so-good ideas, and brought my messy wireframe sketches to life
+            through Figma. I got to explore each step of the UCD process in detail, which I will carry forward and build upon in
+            my future projects. This project was possible thanks to the constant feedback I received from those in the field,
+            friends, and family – their names can be found throughout the app prototype.</p>
+        <br>
+        <br>
+    
+    </section>
+
+
+<footer>
+    <div class="content-wrap">
+        <h4 class="white-text letschat"><nobr>Let's chat!</nobr></h4>
+        <ul class="contact">
+            <li><a href="https://linkedin.com/in/thanvin/" target="_blank"><img src="../images/linkedin.png"></a></li>
+            <li><a href="mailto:gthanvin@gmail.com"><img src="../images/email.png"></a></li>
+            <li><a href="https://instagram.com/tgexplores/" target="_blank"><img src="../images/instagram.png"></a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+
+</html>
