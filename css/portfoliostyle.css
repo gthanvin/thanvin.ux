@@ -108,13 +108,11 @@ a:hover {
 }
 
 .white-button {
-    display: inline-block;
     text-decoration: none;
     color: rgba(41,47,54,100%);
     font-size: 20px;
     font-weight: 600;
     padding: 15px 20px;
-    margin: 24px 0px;
     border-radius: 100px;
     background-color: rgba(235,242,250,100%);
     box-shadow: 5px 8px 8px rgba(40,27,0,8%)
@@ -126,13 +124,11 @@ a:hover {
 }
 
 .black-button {
-    display: inline-block;
     text-decoration: none;
     color:  rgba(235,242,250,100%);
     font-size: 20px;
     font-weight: 600;
     padding: 15px 20px;
-    margin: 24px 0px;
     border-radius: 100px;
     background-color: rgba(41,47,54,100%);
     box-shadow: 5px 8px 8px rgba(40,27,0,8%)
