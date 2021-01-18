@@ -21,7 +21,7 @@ html, body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, li {
+h1, h4, li {
     color: rgba(41,47,54,100%);
 }
 
@@ -40,20 +40,6 @@ h1 {
     margin-bottom: 24px;
 }
 
-h2 {
-    font-size: 40px;
-    font-weight: 600;
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
-h3 {
-    font-size: 32px;
-    font-weight: 300;
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
 h4 {
     font-size: 24px;
     font-weight: 700;
@@ -61,26 +47,31 @@ h4 {
     margin-bottom: 12px;
 }
 
-p, li {
+p {
     font-size: 24px;
     font-weight: 300;
     margin-top: 12px;
     margin-bottom: 12px;
 }
 
-.quotes {
-    font-style: italic;
+ul, ol {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.light-grey {
     font-size: 20px;
     font-weight: 300;
-    margin: 25px 50px 10px 50px;
     color: #8F96A3;
 }
 
-.quote-reference {
-    font-size: 20px;
-    font-weight: 300;
+.quote-align {
+    margin: 25px 50px 10px 50px;
+}
+
+.quote-reference-align {
     margin: 0px 50px 20px 50px;
-    color: rgba(41,47,54,100%);
 }
 
 a {
@@ -95,6 +86,13 @@ a {
 a:hover {
     color: rgba(41,47,54,75%);
     text-decoration: none;
+}
+
+.jump-to {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0;
 }
 
 .menulink {
@@ -154,9 +152,9 @@ a:hover {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    text-decoration: none;
     color: rgba(235,242,250,100%);
-    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
     font-weight: 600;
     padding: 15px;
     cursor: pointer;
@@ -164,7 +162,6 @@ a:hover {
     outline: none;
     border-radius: 100px;
     background-color: rgba(41,47,54,100%);
-    box-shadow: 5px 8px 8px rgba(40,27,0,8%)
 }
 
 #backtotop:hover {
@@ -201,9 +198,8 @@ hr.divider {
     overflow: hidden;
 }
   
-.header li a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.menu-bullet {
+    padding: 5px 0px;
     text-decoration: none;
 }
   
@@ -295,15 +291,13 @@ hr.divider {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
 }
 
 .intro {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 50px 0px;
 }
 
 /*Work---------------------------------------------
@@ -312,17 +306,26 @@ hr.divider {
 .white {
     background-color: rgba(235,242,250,100%);
     overflow: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 50px 0px;
+}
+
+.card {
+    background-color: #FFFFFF ;
+    box-shadow: 5px 8px 8px rgba(40,27,0,8%);
+    max-width: 640px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.card-container {
+    padding: 20px;
 }
 
 .work-pic {
     width: 100%;
-    max-width: 630px;
+    max-width: 640px;
     height: auto;
-    float: left;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    border-radius: 2px 2px 0px 0px;
 }
 
 
@@ -331,8 +334,7 @@ hr.divider {
 
 footer {
     background-color: rgba(41,47,54,100%);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0px;
     overflow: hidden;
 }
 
@@ -361,7 +363,6 @@ footer {
 ------------------------------------------------------------*/
 
 .profilepic {
-    margin-bottom: 100px;
     width: 100%;
     max-width: 420px;
     height: auto;
@@ -370,7 +371,7 @@ footer {
 .about-me {
     background-color: rgb(235,242,250);
     overflow: auto;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .about-me-title {
@@ -492,8 +493,8 @@ div.branch::after {
     background-size: cover;
     background-position: bottom;
     overflow: auto;
-    padding-top: 100px;
-    padding-bottom: 260px;
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 /*EquiPPE------------------------------------------------
@@ -534,41 +535,58 @@ div.branch::after {
 
 @media screen and (max-width:414px){
     h1 {
-        font-size: 40px;
-    }
-    
-    h2 {
         font-size: 36px;
     }
     
-    h3 {
-        font-size: 24px;
-    }
-    
     h4 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
-    p, li {
-        font-size: 20px;
+    p {
+        font-size: 18px;
+    }
+
+    ul, ol {
+        font-size: 18px;
     }
     
     a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .in-text-link {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .jump-to {
+        font-size: 18px;
+    }
+
+    .light-grey {
+        font-size: 16px;
+    }
+
+    .headshot {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .quote-align {
+        margin: 25px 25px 10px 25px;
+    }
+
+    .quote-reference-align {
+        margin: 0px 25px 50px 25px;
     }
     
     .intro {
-        padding-top: 25px;
-        padding-bottom: 100px;
+        padding-top: 12px;
+        padding-bottom: 25px;
     }
 
     .white {
-        padding-top: 75px;
-        padding-bottom: 100px;
+        padding: 25px 0px;
     }
 
     #backtotop {
@@ -579,8 +597,21 @@ div.branch::after {
         background-color: rgba(41,47,54,75%);
     }
 
-    .non-first-quote {
-        margin-top: 24px;
+    .profilepic {
+        display: block;
+        max-width: 318px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-me {
+        padding-bottom: 25px;
+    }
+
+    .interests {
+        background-image: url(../images/about-me-cover-mobile.jpg);
+        padding-top: 25px;
+        padding-bottom: 200px;
     }
    
     .contact {
@@ -612,34 +643,12 @@ div.branch::after {
         margin-right: 0;
     }
 
-    .profilepic {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 25px;
-    }
-
     .about-me-title {
-        padding-top: 40px;
+        padding-top: 25px;
     }
 
     .about-me-spacing {
-        padding-top: 40px;
-    }
-    
-    .interests {
-        background-image: url(../images/about-me-cover-mobile.jpg);
-        padding-top: 75px;
-        padding-bottom: 300px;
-    }
-}
-
-@media screen and (max-width:1138px){
-    
-    .work-pic {
-        width: 100%;
-        max-width: 947px;
-        height: auto;
+        padding-top: 50px;
     }
 }
 

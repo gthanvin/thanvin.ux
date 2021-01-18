@@ -22,9 +22,9 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-              <li><a class="menulink" href="../index.html">HOME</a></li>
-              <li><a class="menulink" href="../pages/aboutme.html">ABOUT</a></li>
-              <li><a class="menulink" href="#about">THOUGHTS</a></li>
+              <li class="menu-bullet"><a class="menulink" href="../index.html#portfolio">portfolio</a></li>
+              <li class="menu-bullet"><a class="menulink" href="../pages/aboutme.html">about me</a></li>
+              <li class="menu-bullet"><a class="menulink" href="#about">thoughts (stay tuned)</a></li>
             </ul>
         </header>
 
@@ -35,26 +35,46 @@
 
         <img class="standard-img" src="../images/equippe-mockup-1.jpg" alt="EquiPPE mockup cover">
         <h1>EquiPPE</h1>
-
+        <div class="filler"></div>
+        <a class="black-button" href="#prototype">jump to prototype</a>
+        
         <hr class="divider">
 
-        <h4>Project duration &#128197</h4>
-        <p>May-Sept., 2020 (5 months)</p>
-        <br>
         <h4>Project goals &#127919</h4>
         <p>For my first UX project, I wished to take on something that was relevant to the time, required me to generate a
-            solution that is thorough and comprehensive, and challenged me to explore the user-centered design process starting
+            solution that is thorough and comprehensive, and challenged me to explore the full spectrum of the user-centered design process 
             from research to creating a high-fidelity prototype.</p>
         <br>
         <h4>Tools &#128295</h4>
         <p>Figma, Photoshop, Illustrator</p>
-        <div class="filler"></div>
-        <a class="black-button" href="#prototype">JUMP TO PROTOTYPE</a>
-        <div class="filler"></div>
+        <br>
+        <h4>Project duration &#128197</h4>
+        <p>May-Sept., 2020 (5 months)</p>
+        <br>
+        <h4>Quick links &#128007</h4>
+        <a class="jump-to" href="#research">Discovery & research</a>
+        <a class="jump-to" href="#personas">User personas</a>
+        <a class="jump-to" href="#solution">Proposed solution</a>
+        <a class="jump-to" href="#goal1">Goal #1</a>
+            <ul>
+                <li><a class="jump-to" href="#goal1-lofi">Lo-fi wireframes</a></li>
+                <li><a class="jump-to" href="#goal1-midfi">Mid-fi wireframes</a></li>
+            </ul>
+        <a class="jump-to" href="#goal2">Goal #2</a>
+            <ul>
+                <li><a class="jump-to" href="#goal2-lofi">Lo-fi wireframes</a></li>
+                <li><a class="jump-to" href="#goal2-midfi">Mid-fi wireframes</a></li>
+            </ul>
+        <a class="jump-to" href="#goal3">Goal #3</a>
+        <a class="jump-to" href="#visual-design">Visual design</a>
+        <a class="jump-to" href="#prototype">Final prototype</a>
+        <a class="jump-to" href="#metrics">Gauging success</a>
+        <a class="jump-to" href="#ideas-left-out">Ideas left out/for future consideration</a>
+        <a class="jump-to" href="#reflection">Reflection</a>
 
         <hr class="divider">
 
-        <h2>Discovery and research</h2>
+        <h1 id="research">Discovery & research</h1>
         <br>
         <h4>Context</h4>
         <p>I started this project in May, 2020 when the world was grappling with the early stages of the COVID-19 pandemic. During
@@ -108,16 +128,17 @@
 
         <hr class="divider">
 
-        <h2>User personas</h2>
+        <h1 id="personas">User personas</h1>
         <br>
         <p>I used news articles of people interviewed on behalf of EOs experiencing PPE shortages, as well as sentiments shared
-            by PPE donors I surveyed, to generate two user personas – Lori and Nathan.</p>
-        <img class="standard-img" src="../images/Lori-card.png" alt="User persona">
+            by PPE donors I surveyed, to generate two user personas – Lori and Nathan.
+        </p>
+        <img class="standard-img" src="../images/Lori-card.png" alt="User persona">  
         <img class="standard-img" src="../images/Nathan-card.png" alt="User persona">
 
         <hr class="divider">
     
-        <h2>Proposed solution</h2>
+        <h1 id="solution">Proposed solution</h1>
         <br>
         <p>Design an app that would help direct PPE donations to EOs in need by:</p>
         <ol>
@@ -128,16 +149,20 @@
         <br>
         <h4>Comparable services</h4>
         <p>Here are two (of many) existing services that share similar goals.</p>
-        <br>
-        <p><em>Get Us PPE</em><br>
-            During the planning stages back in May, I came across <a class="in-text-link" href="https://getusppe.org/" target="_blank">getusppe.org</a>, a website founded by medical professionals in
-            the US whose aim was to facilitate PPE donations to hospitals that need it most. Get Us PPE helped me understand the
-            details required to ensure a successful donation process, which I adapted to suit my app’s framework. They have
-            since expanded to allow PPE requests from select EOs like homeless shelters and social service organizations.
-            Although I found this chart long after I began this project, it illustrates the lopsided nature of PPE shortages.
-        </p>
-        <img class="standard-img" src="../images/Shortage-chart.jpg" alt="PPE shortage chart">
-        <br>
+        <div class="row">
+            <div class="column one-third">
+                <p><em>Get Us PPE</em><br>
+                    During the planning stages back in May, I came across <a class="in-text-link" href="https://getusppe.org/" target="_blank">getusppe.org</a>, a website founded by medical professionals in
+                    the US whose aim was to facilitate PPE donations to hospitals that need it most. Get Us PPE helped me understand the
+                    details required to ensure a successful donation process, which I adapted to suit my app’s framework. They have
+                    since expanded to allow PPE requests from select EOs like homeless shelters and social service organizations.
+                    Although I found this chart long after I began this project, it illustrates the lopsided nature of PPE shortages.
+                </p>
+            </div>
+            <div class="column two-thirds">
+                <img class="standard-img" src="../images/Shortage-chart.jpg" alt="PPE shortage chart">
+            </div>
+        </div>
         <br>
         <p><em>DonateTO</em><br>
             An initiative set up by the <a class="in-text-link" href="https://www.toronto.ca/home/covid-19/covid-19-how-you-can-help/covid-19-donateto/covid-19-donation-of-goods-and-services/" target="_blank">City of Toronto</a> in April, where PPE donors may fill out an online form to submit their
@@ -163,7 +188,7 @@
 
         <hr class="divider">
 
-        <h2>Goal #1: Requesting PPE</h2>
+        <h1 id="goal1">Goal #1: Requesting PPE</h1>
         <br>
         <p>I started by understanding the relevant info that would be needed from EOs, like Second Home, requesting for PPE.</p>
         <br>
@@ -215,7 +240,7 @@
             Once Lori submits a request, having a view count would help her track how many PPE donors have seen it, and may consider donating. 
         </p>
         <br>
-        <h4>Goal #1 lo-fi wireframes</h4>
+        <h4 id="goal1-lofi">Goal #1 lo-fi wireframes</h4>
         <br>
         <img class="standard-img" src="../images/lo-fi-request.png" alt="Lo fi onboarding and request userflow">
         <br>
@@ -229,7 +254,7 @@
             </div>
         </div>        
         <br>        
-        <h4>Goal #1 mid-fi wireframes</h4>
+        <h4 id="goal1-midfi">Goal #1 mid-fi wireframes</h4>
         <br>
         <img class="standard-img" src="../images/mid-fi-request.png" alt="Mid fi onboarding and request userflow">
         <br>
@@ -243,7 +268,7 @@
 
         <hr class="divider">
 
-        <h2>Goal #2: Find EOs in need</h2>
+        <h1 id="goal2">Goal #2: Find EOs in need</h1>
         <br>
         <p>
             What could be an optimal format to display PPE requests to donors like Nathan? I had the idea of a real-time request
@@ -262,7 +287,7 @@
             When tapped, a request card pulls up the respective EO’s page where their PPE requests and donation instructions are available.
         </p>
         <br>
-        <h4>Goal #2 lo-fi wireframes</h4>
+        <h4 id="goal2-lofi">Goal #2 lo-fi wireframes</h4>
         <br>
         <img class="standard-img" src="../images/lo-fi-donors.png" alt="Lo fi onboarding and donation userflow">
         <br>
@@ -274,7 +299,7 @@
             </div>
         </div> 
         <br>
-        <h4>Goal #2 mid-fi wireframes</h4>
+        <h4 id="goal2-midfi">Goal #2 mid-fi wireframes</h4>
         <br>
         <img class="standard-img" src="../images/mid-fi-donors.png" alt="Mid fi onboarding and donation userflow">
         <br>
@@ -288,7 +313,7 @@
 
         <hr class="divider">
 
-        <h2>Goal #3: Ensuring a convenient donation process</h2>
+        <h1 id="goal3">Goal #3: Ensuring a convenient donation process</h1>
         <br>
         <p>
             In the initial design and even leading up to the final prototype, donors requesting pick-up would have to arrange by
@@ -304,48 +329,100 @@
 
         <hr class="divider">
 
-        <h2 id="prototype">Final prototype</h2>
+        <h1 id="visual-design">Visual design</h1>
         <br>
-        <p>Test how Lori and Nathan would use EquiPPE.</p>
+        <p><em>Material Design</em><br>
+            Google’s Material Design documentation provided guidance on GUI layout standards and component behaviours, while
+            highlighting their similarities and differences between Android and iOS, which I highly appreciated. I also used its
+            free icon library.
+        </p>
+        <br>
+        <p><em>Logo</em><br>
+            I wanted the logo to represent kindness and protection. I chose to incorporate a face mask, as it became symbolic
+            during this pandemic. To generate ideas, I folded a face mask into different configurations, with most resembling
+            either a paraglider or a bag that drops off PPE. I liked a variation that resembled a heart, which I refined into
+            the minimalistic graphic seen now.
+        </p>
+        <br>
         <div class="row">
-
-            <div class="column quarters">
-                <h4>User task #1</h4>
-                <p>Lori requests for face shields and hand sanitizer on behalf of Second Home.</p>
-                <div class="filler"></div>
-                <a class="black-button" href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2893%3A2604&scaling=contain" target="_blank">TEST</a>
-                <div class="filler"></div>
+            <div class="column one-third">
+                <img class="equippe-logo" src="../images/equippe-icon.png" alt="EquiPPE logo">
             </div>
-
-            <div class="column quarters">
-                <h4>User task #2</h4>
-                <p>Nathan finds EOs in need of face shields and ear savers, and requests for pick-up.</p>
-                <div class="filler"></div>
-                <a class="black-button" href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2893%3A3058&scaling=contain" target="_blank">TEST</a>
-                <div class="filler"></div>
+            <div class="column two-thirds">
+                <img class="standard-img" src="../images/mask-config.jpg" alt="Mask configurations for logo design">
             </div>
-
-            <div class="column quarters">
-                <h4>User task #3</h4>
-                <p>Lori receives Nathan's donation pick-up request and confirms the day/time.</p>
-                <div class="filler"></div>
-                <a class="black-button" href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2893%3A3845&scaling=contain" target="_blank">TEST</a>
-                <div class="filler"></div>
-            </div>
-
-            <div class="column quarters">
-                <h4>User task #4</h4>
-                <p>Nathan has his donation picked up by an employee from Second Home.</p>
-                <div class="filler"></div>
-                <a class="black-button" href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2902%3A0&scaling=contain" target="_blank">TEST</a>
-                <div class="filler"></div>
-            </div>
-
-        </div> 
+        </div>
         <br>
+        <p><em>Colours</em><br>
+            PPE typically come in colours associated with the medical field, such as teal and pastel blue. Using them as base
+            colours, I played around on coolors.co to generate the palette. I contrast checked using WebAIM to ensure important text elements met WCAG standards.
+        </p>
+        <br>
+        <p><em>Typeface</em><br>
+            My typeface choice for this project is Sans Source Pro, obtained through Google Fonts. The relatively taller
+            x-height across its fonts affords more screen real estate and maintains a minimalistic feel, which I was keen on.
+            Other typefaces I considered were Lato, Open Sans, Proxima Nova, and Roboto.
+        </p>
+
         <hr class="divider">
 
-        <h2>Gauging success</h2>
+        <h1 id="prototype">Final prototype</h1>
+        <br>
+        <p>Try out the 4 user tasks below to see how Lori and Nathan would use EquiPPE.</p>
+
+        <div class="row">
+            <div class="column left50">
+                <a href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2893%3A2604&scaling=contain" target="_blank">
+                    <div class="card">
+                        <img class="work-pic" src="../images/user-task-1.png" alt="Requesting PPE">
+                        <div class="card-container">
+                            <h4>1. Signing up to request PPE</h4>
+                            <p>Lori signs up Second Home to request for face shields and hand sanitizer.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column right50">
+                <a href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2893%3A3058&scaling=contain" target="_blank">
+                    <div class="card">
+                        <img class="work-pic" src="../images/user-task-2.png" alt="Finding and donating to EOs">
+                        <div class="card-container">
+                            <h4>2. Finding and donating to EOs in need</h4>
+                            <p>Nathan finds local EOs in need of face shields and ear savers, and requests for pick-up.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column left50">
+                <a href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2893%3A3845&scaling=contain" target="_blank">
+                    <div class="card">
+                        <img class="work-pic" src="../images/user-task-3.png" alt="Confirming request for donation pick-up">
+                        <div class="card-container">
+                            <h4>3. Confirming request for donation pick-up</h4>
+                            <p>Lori receives Nathan's donation pick-up request and confirms the day/time.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column right50">
+                <a href="https://www.figma.com/proto/F1OCmeZXhTkhP56TnQpHyr/PPE-app-final?node-id=2902%3A0&scaling=contain" target="_blank">
+                    <div class="card">
+                        <img class="work-pic" src="../images/user-task-4.png" alt="Donation picked up and experience feedback">
+                        <div class="card-container">
+                            <h4>4. Donation picked up + experience feedback</h4>
+                            <p>Nathan has his donation picked up by an employee from Second Home.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br>
+
+        <hr class="divider">
+
+        <h1 id="metrics">Gauging success</h1>
         <br>
         <p>The metrics outlined below may be used to gauge whether the main goals of the app are achieved.</p>
         <br>
@@ -357,7 +434,7 @@
 
         <hr class="divider">
 
-        <h2>Ideas left out/for future consideration</h2>
+        <h1 id="ideas-left-out">Ideas left out/for future consideration</h1>
         <br>
         <p><em>Instructions to make PPE</em><br>
             I floated the idea to include instructions on how to DIY certain PPE items. While this feature may be useful, user
@@ -401,44 +478,7 @@
 
         <hr class="divider">
 
-        <h2>Visual design</h2>
-        <br>
-        <p><em>Material Design</em><br>
-            Google’s Material Design documentation provided guidance on GUI layout standards and component behaviours, while
-            highlighting their similarities and differences between Android and iOS, which I highly appreciated. I also used its
-            free icon library.
-        </p>
-        <br>
-        <p><em>Logo</em><br>
-            I wanted the logo to represent kindness and protection. I chose to incorporate a face mask, as it became symbolic
-            during this pandemic. To generate ideas, I folded a face mask into different configurations, with most resembling
-            either a paraglider or a bag that drops off PPE. I liked a variation that resembled a heart, which I refined into
-            the minimalistic graphic seen now.
-        </p>
-        <br>
-        <div class="row">
-            <div class="column one-third">
-                <img class="equippe-logo" src="../images/equippe-icon.png" alt="EquiPPE logo">
-            </div>
-            <div class="column two-thirds">
-                <img class="standard-img" src="../images/mask-config.jpg" alt="Mask configurations for logo design">
-            </div>
-        </div>
-        <br>
-        <p><em>Colours</em><br>
-            PPE typically come in colours associated with the medical field, such as teal and pastel blue. Using them as base
-            colours, I played around on coolors.co to generate the palette. I contrast checked using WebAIM to ensure important text elements met WCAG standards.
-        </p>
-        <br>
-        <p><em>Typeface</em><br>
-            My typeface choice for this project is Sans Source Pro, obtained through Google Fonts. The relatively taller
-            x-height across its fonts affords more screen real estate and maintains a minimalistic feel, which I was keen on.
-            Other typefaces I considered were Lato, Open Sans, Proxima Nova, and Roboto.
-        </p>
-
-        <hr class="divider">
-
-        <h2>Reflection</h2>
+        <h1 id="reflection">Reflection</h1>
         <br>
         <p>I’m proud to have completed my first UX project. In the process, I conducted surveys, reached out to those working on
             the frontlines, navigated through good and not-so-good ideas, and brought my messy wireframe sketches to life
@@ -447,7 +487,10 @@
             friends, and family – their names can be found throughout the app prototype.</p>
         <br>
         <br>
-    
+        <a class="black-button" href="../index.html#portfolio">back to portfolio</a>
+        <div class="filler"></div>
+        <div class="filler"></div>
+
     </section>
 
 
@@ -457,8 +500,8 @@
             <nobr>Let's chat!</nobr>
         </h4>
         <div class="contact">
-            <a href="https://linkedin.com/in/thanvin/" target="_blank"><img src="../images/linkedin.png"></a>
             <a href="mailto:gthanvin@gmail.com"><img src="../images/email.png"></a>
+            <a href="https://linkedin.com/in/thanvin/" target="_blank"><img src="../images/linkedin.png"></a>
             <a href="https://instagram.com/tgexplores/" target="_blank"><img src="../images/instagram.png"></a>
         </div>
         <p class="white-text copyright">
@@ -467,7 +510,7 @@
     </div>
 </footer>
 
-<button onclick="topFunction()" id="backtotop">&#160;&#9757&#160;</button>
+<button onclick="topFunction()" id="backtotop">top &#9757&#160;</button>
 
 <!--- Back to top btn JS --->
 
