@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savery</title>
+    <meta name="description" content="A platform that helps users discover recipes and save grocery costs.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/portfoliostyle.css">
+</head>
+
+
+<body>
+
+    <section class="savery-banner">
+       
+        <header class="content-wrap header">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li class="menu-bullet"><a class="menulink" href="../index.html#portfolio">portfolio</a></li>
+              <li class="menu-bullet"><a class="menulink" href="../pages/aboutme.html">about me</a></li>
+              <li class="menu-bullet"><a class="menulink" href="#about">thoughts (stay tuned)</a></li>
+            </ul>
+        </header>
+
+    </section>
+
+
+    <section class="content-wrap">
+
+        <img class="standard-img" src="../images/savery-mockup-cover.png" alt="Savery mockup cover">
+        <h1>Savery</h1>
+        <div class="filler"></div>
+        <a class="black-button" href="#final-prototype">jump to prototype</a>
+        
+        <hr class="divider">
+
+        <h4>Project goals &#127919</h4>
+        <p>Having worked on my first project independently, I wished to collaborate with a fellow UX designer this time. I had
+            the pleasure to work with <a class="in-text-link" href="https://www.lillian-lin.com/" target="_blank">Lillian</a>, whom I connected with through the Brooklyn Product Design
+            Meetup Slack group. She was especially helpful in the early stages of the project as we actively evaluated our
+            ideas, while being accountable for any oversights or biases. We also made a point to generate ideas on our own before
+            sharing them to minimize influencing each others' thoughts. I personally wanted to improve my skillset in research
+            analysis (to create more representative user personas) and conducting usability tests.</p>
+        <br>
+        <h4>Tools &#128295</h4>
+        <p>Figma, Qualtrics, Illustrator, Trello, After Effects</p>
+        <br>
+        <h4>Project duration &#128197</h4>
+        <p>Jan. – Mar., 2021 (2 months)</p>
+        <br>
+        <h4>Quick links &#128007</h4>
+        <a class="jump-to" href="#research">Discovery & research</a>
+        <a class="jump-to" href="#personas">User personas</a>
+        <a class="jump-to" href="#solution">Proposed solution</a>
+        <a class="jump-to" href="#lo-fi-wireframes">Lo-fi wireframes</a>
+        <a class="jump-to" href="#mid-fi-prototype">Mid-fi prototype</a>
+        <a class="jump-to" href="#visual-design">Visual design</a>
+        <a class="jump-to" href="#final-prototype">Final prototype</a>
+        <a class="jump-to" href="#metrics">Gauging success</a>
+        <a class="jump-to" href="#future-considerations">Future considerations</a>
+        <a class="jump-to" href="#reflection">Reflection</a>
+
+        <hr class="divider">
+
+        <h1 id="research">Discovery & research</h1>
+        <br>
+        <h4>Context</h4>
+        <p>After a couple days of brainstorming, we settled on the topic of grocery shopping. Grocery cost is an expense people
+            have the power to control but isn’t necessarily easy. Factors like deciding what to cook, buying the right
+            ingredients on the next grocery trip while being conscious of cost are often times a hassle. This becomes a routine,
+            with feelings of not having enough time to plan or try new recipes, cooking a limited variety of dishes every week,
+            tediously sorting through flyers, and opting to eat out.
+            <br>
+            <br>
+            Thankfully, there are apps freely available to those looking to make their lives easier. Yummly, Epicurious, NYT
+            Cooking, Sidechef, Whisk, and Mealime allow users to browse recipes and populate a grocery list based on recipe
+            ingredients. Some also give users the liberty to store their own recipes for future reference. When it comes to saving cost, Flipp
+            is a popular platform to compare prices across many local grocery stores and browse weekly offers.
+        </p>
+        <br>
+
+        <h4>What's the problem?</h4>
+        <p>There isn’t a problem per se, as much as an inconvenience. Ideally, people using an app to sort out their meals and
+            groceries would have a go-to that encompasses all aspects into a seamless experience. In reality however, apps
+            mentioned above exist as silos catered to specific aspects of the overall experience such as discovering recipes,
+            meal planning, sale offers, and budgeting. As a result, users are inconvenienced by having to use multiple,
+            disconnected apps. We are proposing an app that combines all key aspects mentioned above into a single user
+            experience.
+            <br>
+            <br>
+            We generated a survey using Qualtrics to understand people’s attitudes and habits towards recipes and grocery
+            shopping. We are thankful to have received 46 responses, which helped us prioritize design areas. Here’s a
+            high-level summary, followed by the complete data visualizations.
+        </p>
+        <ul>
+            <li>70% of responses came from age groups 25-34 and 45-54</li>
+            <li>Relatively even split between those that cook for 1-2 people vs. 3-5 people</li>
+            <li>Majority (61%) shop for groceries once a week</li>
+            <li>A slightly greater portion (46%) shop at two stores, over one store (37%)</li>
+            <li>Most place importance in saving grocery costs and using store flyers</li>
+            <li>Requiring too many ingredients and unavailability of certain ingredients at home are the top two factors
+                discouraging people from trying new recipes</li>
+        </ul>
+
+        <img class="standard-img" src="../images/general-questions.png" alt="General questions">
+
+        <div class="row">
+            <div class="column left50">
+                <img class="standard-img" src="../images/discouraging-factors.png" alt="Discouraging factors">
+            </div>
+        </div> 
+
+        <hr class="divider">
+
+        <h1 id="personas">User personas</h1>
+        <br>
+        <p>I created two user personas by progressively filtering through survey data. I started filtering down responses by
+            those who rated ‘saving grocery costs’ as important or somewhat important. I then split the pool into two cohorts,
+            one for those who cook for 1-2 household members and the other for 3-5. I picked the biggest age group from each
+            cohort to understand their habits further.
+        </p>
+
+        <img class="standard-img" src="../images/User-persona-filters.png" alt="User persona filters">
+
+        <p>Based on the chart above, I came up with the personas of Cindy and Jimmy.</p>  
+
+        <img class="standard-img" src="../images/cindy-card.png" alt="Cindy user persona">  
+        <img class="standard-img" src="../images/jimmy-card.png" alt="Jimmy user persona">
+
+        <hr class="divider">
+    
+        <h1 id="solution">Proposed solution</h1>
+        <br>
+        <h4>Primary goals</h4>
+        <ol>
+            <li>Ease dissonance by helping users pick recipes for their everyday meals </li>
+            <li>Save users time by finding economical offers for items on their grocery list</li>
+            <li>Help users stay within their budget by tracking grocery expenses</li>
+        </ol>
+        <br>
+        <h4>Initial solution was unrealistic</h4>
+        <p>The initial solution was to design an app that suggests recipes tailored to a user’s diet preferences and meal
+            budget. Each recipe would have an associated price per serving based on ingredient prices at local
+            grocery stores. After the user adds recipes to their recipe plan, they can select offers for ingredients, and
+            generate a grocery list based on their selections. After a handful of usability tests using <a class="in-text-link" href="https://www.figma.com/proto/PNdJJ9JliwOLmCTDNvf6xv/Cost-saving-recipe-app?node-id=437%3A2857&scaling=scale-down&page-id=0%3A1" target="_blank">this prototype</a>, users
+            felt:
+        </p>
+        <ul>
+            <li>Price per serving metric for recipes was unintuitive</li>
+            <li>Suggested recipes shouldn’t be limited by price per serving</li>
+            <li>‘Recipe plan’ flow felt linear and restrictive, especially the snackbar that notifies when the price per serving of
+                a recipe exceeds the user’s initial limit</li>
+            <li>They were unable to add items not associated with recipes to the grocery list (e.g. chips)</li>
+        </ul>
+        <p>In addition, the backend processes would be unnecessarily complex, pulling ingredient prices from local stores to
+            calculate the price per serving of recipes a user may not even consider. For said reasons, we abandoned this
+            concept.</p>
+        
+        <br>
+        <h4>Revised solution</h4>
+        <p>
+            Apart from the three primary goals mentioned, we had to design with the aim to get users to start using the app as part of their
+            regular grocery trips. Here is a glance at key factors, including how we tackled issues faced by the previous concept.
+        </p>
+        <br>
+        <p><em>Open vs. curated recipes</em><br>
+            Would the recipes be populated using community contributions or be curated by in-house culinary staff? Each have their
+            pros and cons, but we decided on the latter as it allows for standardizing recipes and easier content updates.
+        </p>
+        <br>
+        <p><em>Recipe content</em><br>
+            The recipes would at the very minimum feature the essentials from cuisines around the world. We categorized them
+            into meal types (i.e. breakfast, lunch, dinner, etc.), as users prefer to find and plan recipes that way. According
+            to our survey, YouTube is a major source for recipes as it allows viewers to follow along and relate to chef
+            personalities. I incorporated this into the app through my idea of ‘YouTube Weekly’, where users can discover
+            trending recipes and make it a part of their meal planning experience. Additionally, all recipes will be available
+            to view in a video format.
+        </p>
+        <br>
+        <p><em>Doing away with price per serving</em><br>
+            After receiving feedback, the price per serving metric was too granular and did not serve users as expected. If our
+            goal is to help users save grocery cost, we should rather target their overall expenditures. This not only reduces
+            the backend load, but more importantly gives users greater flexibility to cook and shop for what they wish.
+        </p>
+        <br>
+        <p><em>Getting rid of 'Recipe plan' flow</em><br>
+            Users mentioned the ‘Recipe plan’ flow felt linear and restrictive. They would prefer adding recipe ingredients
+            directly to the grocery list without having to go through the step-by-step process that is the ‘Recipe plan’. In the
+            revised version, users should be able to populate their grocery list within a few taps.
+        </p>
+        <br>
+        <p><em>Adding personal recipes</em><br>
+            On most days, people tend to cook meals they are familiar with. For this reason, the app will allow users to record
+            their own recipes for future reference and meal planning.
+        </p>
+        <br>
+        <p><em>Store preferences</em><br>
+            Based on survey responses, 46% shop at two stores per grocery trip, likely for cost saving, product variety, and
+            freshness. This infers that people have preferences for the stores they shop at. With this in mind, the app should
+            provide users the option to be more selective of the store from which offers are suggested.
+        </p>
+        <br>
+        <p><em>Suggested offers for items on grocery lists</em><br>
+            Should users be presented with offers to select from or should the app pre-select an offer it thinks is the most
+            economical for items on the grocery list? Based on feedback, most wish the app pre-selects the offer for each
+            grocery item, while giving its users the flexibility to opt for alternative offers if preferred.
+        </p>
+        <br>
+        
+        <hr class="divider">
+
+        <h1 id="lo-fi-wireframes">Lo-fi wireframes</h1>
+        <br>
+        <p>Here are lo-fi wireframes of the revised concept. User tasks include:</p>
+        <ul>
+            <li>Onboarding</li>
+            <li>Viewing a recipe</li>
+            <li>Adding ingredients of a recipe to grocery list</li>
+            <li>Storing a personal recipe</li>
+            <li>Viewing grocery list and an item on it</li>
+        </ul>
+
+        <img class="standard-img" src="../images/savery-lo-fi.png" alt="Lo-fi wireframes"> 
+
+        <hr class="divider">
+
+        <h1 id="mid-fi-prototype">Mid-fi prototype</h1>
+        <br>
+        <p>Test out the mid-fi prototype <a class="in-text-link" href="https://www.figma.com/proto/PNdJJ9JliwOLmCTDNvf6xv/Cost-saving-recipe-app?node-id=1445%3A0&scaling=scale-down&page-id=1420%3A6352" target="_blank">here</a>.
+            Below are screenshots with accompanying explanations. Numbers circled in red denote user feedback. 
+        </p>
+
+        <img class="standard-img" src="../images/savery-mid-fi.png" alt="Mid-fi prototype">
+        
+        <hr class="divider">
+
+        <h1 id="visual-design">Visual design</h1>
+        <br>
+        <h4>App name and logo</h4>
+        <div class="row">
+            <div class="column left50">
+                <img class="standard-img" src="../images/savery-logo-ideas.png" alt="Savery logo ideas">
+            </div>
+            <div class="column right50">
+                <p>
+                    I came up with Savery, a wordplay between ‘savoury’ and ‘save’. As for the logo, I dabbled with and was drawn to the
+                    negative space created by the spine of the uppercase S as it loosely resembled the shape of a wooden spatula. I
+                    generated the variations below and liked the 3rd design, before adding the implied vertical line of the dollar sign on
+                    the 4th and final version.
+                </p>
+            </div>
+        </div>
+        <br>
+        <h4>Colour</h4>
+        <div class="row">
+            <div class="column left50">
+                <img class="standard-img" src="../images/savery-colour.png" alt="Colour green">
+            </div>
+            <div class="column right50">
+                <p>
+                    For the app’s primary colour, I decided on green as it is typically associated with freshness and finance. I also used
+                    green to accent various screen elements such as CTA buttons, tab indicators, checkmarks, radio buttons, and certain
+                    active selections.
+                </p>
+            </div>
+        </div>
+        <br>
+        <h4>Typeface</h4>
+        <div class="row">
+            <div class="column left50">
+                <img class="standard-img" src="../images/savery-typeface.png" alt="Typeface">
+            </div>
+            <div class="column right50">
+                <p>
+                    The mastheads of several food magazines and recipe books use serif typefaces, which factored into my rationale for
+                    Savery’s typeface choices. I decided on pairing DM Serif Display with Work Sans. DM Serif is a naturally heavier and
+                    elegant typeface, so it worked well as a H1 header, while Work Sans’s legibility took care of H2 headers and beyond.
+                </p>
+            </div>
+        </div>
+        <br>
+        <h4>Graphical elements</h4>
+        <p>
+            I obtained certain vector graphics through the free illustration site, Undraw. I downloaded and imported their SVG files
+            into Illustrator where I modified them to suit my needs. Recipe photos were sourced from Unsplash and Google Images.
+            This is a personal portfolio project and will not be used commercially.
+        </p>
+
+        <hr class="divider">
+
+        <h1 id="final-prototype">Final prototype</h1>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="https://www.figma.com/proto/sepnCmFyppytI8bQpUj2mj/Savery-final?node-id=667%3A1944&scaling=scale-down&page-id=0%3A1" target="_blank">
+                    <div class="card">
+                        <img class="work-pic" src="../images/savery-mockup-cover.png" alt="Final prototype">
+                        <div class="card-container">
+                            <h4>Check out Savery &#128064</h4>
+                            <p>This prototype is based on Cindy's persona. Please read the onboarding and user tasks before you begin.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column right50">
+                <h4>Onboarding</h4>
+                <ul>
+                    <li>ZIP Code: 02122</li>
+                    <li>Dietary restrictions: Vegetarian; peanut allergy</li>
+                    <li>Store preferences: Flexible</li>
+                    <li>Grocery budget: Shops once a week; $1,000 monthly budget</li>
+                </ul>
+                <br>
+                <h4>User tasks</h4>
+                <ul>
+                    <li>Find the recipe for Quinoa Tabbouleh and add its ingredients to your grocery list</li>
+                    <li>Add a recipe of your own, then add its ingredients to grocery list</li>
+                    <li>View grocery list; see which lemons to buy</li>
+                    <li>Add potatoes to your grocery list</li>
+                    <li>Add an expense</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <h1 id="metrics">Gauging success</h1>
+        <br>
+        <p>The metrics outlined below may be used to gauge whether the main goals of the app are achieved.</p>
+        <div class="row">
+            <div class="column right75">
+                <img class="standard-img" src="../images/savery-metrics.JPG" alt="Metrics">
+            </div>
+        </div> 
+
+        <hr class="divider">
+
+        <h1 id="future-considerations">Future considerations</h1>
+        <br>
+        <h4>Stores without a website/product catalogue</h4>
+        <p>
+            Many people shop at stores that don’t have a website or a digital product catalogue. Without that data, the current
+            version of Savery would be unable to suggest offers from those stores. A potential solution would be to add a store-side
+            aspect where grocers sign up and update products on sale, if they find it worthwhile for their business. Savery would
+            use this info to ensure their offers are suggested to users. Another idea would be to design an app that builds up a
+            community where shoppers can share sale offers they found in-store, which others can filter by the grocery items they
+            are looking to buy.
+        </p>
+        <br>
+        <h4>Standardizing unit price</h4>
+        <p>
+            When it comes to groceries, especially produce and meats, there can often be discrepancies when comparing two similar
+            products. Lemons for example, can be sold individually (priced as each) and in a bag (priced in lbs.), making it harder
+            to decide on the more economical format as they do not share a common unit. To address this, Savery’s backend would
+            require a catalogue that dictates how many units of an item are in a unit weight, like knowing there are roughly 4
+            lemons in a pound. This backend implementation would be a big undertaking that could be made easier if partnered with a
+            grocer that may have all these conversions figured out.
+        </p>
+        <br>
+        <h4>Onboarding purchased grocery items from receipt</h4>
+        <p>
+            Savery can evolve into a more insightful platform with the capability to onboard grocery items a user purchased by
+            scanning their receipt. By working with major grocers to implement a QR system or by linking a store card, Savery would
+            be able to track and provide users with better insights on their purchasing habits, enabling them to make more informed
+            decisions about what they buy.
+        </p>
+        <br>
+        <h4>Weekly deals and price watch</h4>
+        <p>
+            In the current version, a user can add an item (unassociated with a recipe) to their grocery list using the ‘add item’
+            FAB, then find the best offer for it. For future iteration, a ‘weekly deals’ tab could be implemented, allowing users to
+            browse through featured offers at local grocery stores and add an item to their grocery list if they wish. They could
+            even set notifications for when a certain item goes on sale or drops in price.
+        </p>
+        <br>
+        <h4>Diet preferences</h4>
+        <p>
+            For the project’s sake, I kept the diet selection fairly modest. If Savery were to be developed, users would be able to
+            select from a wider range of diet preferences such as high-protein, low-carb, low-fat, keto, paleo, etc.
+        </p>
+        <br>
+        <h4>Social interactions</h4>
+        <p>
+            While everyone recognized the primary goals of Savery, some mentioned it would be nice to have a social aspect. This
+            includes commenting on recipes and joining food interest groups within the app. This aspect could be implemented based
+            on user demand, and feasibility on Savery’s end in terms of development and community moderation.
+        </p>
+        <br>
+        <h4>Sponsorships and partnerships</h4>
+        <p>
+            Savery can collaborate with a variety of companies across food and health industries to expand its user base and revenue
+            streams. This includes featuring sample recipes curated by top chefs, weight-loss programs, brands like Betty Crocker
+            and Pillsbury, and food blogs. Savery can forge tie-ups with grocers to implement a rewards system, and pin sponsored
+            offers.
+        </p>
+
+        <hr class="divider">
+
+        <h1 id="reflection">Reflection</h1>
+        <br>
+        <p>
+            Firstly, I was amazed with how many people responded to our survey. It was intriguing combing through responses to
+            find trends between data points, giving us a better understanding of why people shop the way they do. Working with
+            Lillian greatly reduced project time in the initial stages and encouraged me to not overthink design considerations.
+            Although work deadlines kept her busy around when we started the mid-fi prototype, she provided feedback as I
+            carried through the rest of the project. Lastly, I improved on conducting usability tests by consciously ensuring I
+            minimized influencing users on how they interacted with the prototypes. By doing so, it was much easier to notice
+            the screen elements users were drawn to.
+        </p>
+        <br>
+        <br>
+        <a class="black-button" href="../index.html#portfolio">back to portfolio</a>
+        <div class="filler"></div>
+        <div class="filler"></div>
+
+    </section>
+
+
+<footer>
+    <div class="content-wrap">
+        <h4 class="white-text letschat">
+            <nobr>Let's chat!</nobr>
+        </h4>
+        <div class="contact">
+            <a href="mailto:gthanvin@gmail.com"><img src="../images/email.png"></a>
+            <a href="https://linkedin.com/in/thanvin/" target="_blank"><img src="../images/linkedin.png"></a>
+            <a href="https://instagram.com/tgexplores/" target="_blank"><img src="../images/instagram.png"></a>
+        </div>
+        <p class="white-text copyright">
+            Copyright &#169 2021 Thanvin Giridhar. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<button onclick="topFunction()" id="backtotop">top &#9757&#160;</button>
+
+<!--- Back to top btn JS --->
+
+<script>
+
+var mybutton = document.getElementById("backtotop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+</body>
+
+</html>
