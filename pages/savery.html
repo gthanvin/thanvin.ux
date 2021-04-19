@@ -19,12 +19,13 @@
     <section class="savery-banner">
        
         <header class="content-wrap header">
+            <a class="menu-back" href="../index.html#portfolio">&#8592 Portfolio</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-              <li class="menu-bullet"><a class="menulink" href="../index.html#portfolio">portfolio</a></li>
-              <li class="menu-bullet"><a class="menulink" href="../pages/aboutme.html">about me</a></li>
-              <li class="menu-bullet"><a class="menulink" href="#about">thoughts (stay tuned)</a></li>
+              <li class="menu-bullet"><a class="menulink" href="../index.html#portfolio">Portfolio</a></li>
+              <li class="menu-bullet"><a class="menulink" href="../pages/aboutme.html">About me</a></li>
+              <li class="menu-bullet"><a class="menulink" href="#about">Thoughts (stay tuned)</a></li>
             </ul>
         </header>
 
@@ -33,19 +34,20 @@
 
     <section class="content-wrap">
 
+        <div class="filler"></div>
         <img class="standard-img" src="../images/savery-mockup-cover.png" alt="Savery mockup cover">
         <h1>Savery</h1>
-        <div class="filler"></div>
-        <a class="black-button" href="#final-prototype">jump to prototype</a>
+        <br>
+        <a class="black-button" href="#final-prototype">Jump to prototype</a>
         
         <hr class="divider">
 
         <h4>Project goals &#127919</h4>
         <p>Having worked on my first project independently, I wished to collaborate with a fellow UX designer this time. I had
             the pleasure to work with <a class="in-text-link" href="https://www.lillian-lin.com/" target="_blank">Lillian</a>, whom I connected with through the Brooklyn Product Design
-            Meetup Slack group. She was especially helpful in the early stages of the project as we actively evaluated our
-            ideas, while being accountable for any oversights or biases. We also made a point to generate ideas on our own before
-            sharing them to minimize influencing each others' thoughts. I personally wanted to improve my skillset in research
+            Meetup Slack group. She was especially helpful early in the project as we actively evaluated our
+            ideas and being accountable for oversights or biases. We made a point to generate ideas independently first before
+            sharing them to minimize influencing each others' thoughts. I personally wanted to improve my research
             analysis (to create more representative user personas) and conducting usability tests.</p>
         <br>
         <h4>Tools &#128295</h4>
@@ -71,33 +73,39 @@
         <h1 id="research">Discovery & research</h1>
         <br>
         <h4>Context</h4>
-        <p>After a couple days of brainstorming, we settled on the topic of grocery shopping. Grocery cost is an expense people
-            have the power to control but isn’t necessarily easy. Factors like deciding what to cook, buying the right
+        <p>Grocery cost is an expense people can control but isn’t necessarily easy. Deciding what to cook, buying the right
             ingredients on the next grocery trip while being conscious of cost are often times a hassle. This becomes a routine,
             with feelings of not having enough time to plan or try new recipes, cooking a limited variety of dishes every week,
             tediously sorting through flyers, and opting to eat out.
-            <br>
-            <br>
-            Thankfully, there are apps freely available to those looking to make their lives easier. Yummly, Epicurious, NYT
-            Cooking, Sidechef, Whisk, and Mealime allow users to browse recipes and populate a grocery list based on recipe
-            ingredients. Some also give users the liberty to store their own recipes for future reference. When it comes to saving cost, Flipp
-            is a popular platform to compare prices across many local grocery stores and browse weekly offers.
         </p>
         <br>
+        <p>
+            Thankfully, there are apps freely available to those looking to make their lives easier. Yummly, Epicurious, NYT
+            Cooking, Sidechef, Whisk, and Mealime allow users to browse recipes and populate a grocery list based on recipe
+            ingredients. Some give users the liberty to store their own recipes for future reference. When it comes to
+            saving cost, Flipp is a popular platform to compare prices across many local grocery stores and browse weekly offers.
+        </p>
+        
+        <img class="standard-img" src="../images/savery-existing-apps.png" alt="Existing apps">
+        <div class="filler"></div>
 
         <h4>What's the problem?</h4>
         <p>There isn’t a problem per se, as much as an inconvenience. Ideally, people using an app to sort out their meals and
             groceries would have a go-to that encompasses all aspects into a seamless experience. In reality however, apps
             mentioned above exist as silos catered to specific aspects of the overall experience such as discovering recipes,
-            meal planning, sale offers, and budgeting. As a result, users are inconvenienced by having to use multiple,
+            meal planning, finding sale offers, and budgeting. As a result, users are inconvenienced by having to use multiple,
             disconnected apps. We are proposing an app that combines all key aspects mentioned above into a single user
             experience.
             <br>
-            <br>
+        </p>
+        <br>
+        <h4>Survey research</h4>
+        <p>
             We generated a survey using Qualtrics to understand people’s attitudes and habits towards recipes and grocery
             shopping. We are thankful to have received 46 responses, which helped us prioritize design areas. Here’s a
             high-level summary, followed by the complete data visualizations.
         </p>
+        <br>
         <ul>
             <li>70% of responses came from age groups 25-34 and 45-54</li>
             <li>Relatively even split between those that cook for 1-2 people vs. 3-5 people</li>
@@ -109,12 +117,8 @@
         </ul>
 
         <img class="standard-img" src="../images/general-questions.png" alt="General questions">
-
-        <div class="row">
-            <div class="column left50">
-                <img class="standard-img" src="../images/discouraging-factors.png" alt="Discouraging factors">
-            </div>
-        </div> 
+        <img class="standard-img" src="../images/importance-ranking.png" alt="Importance rankings">
+        <img class="standard-img" src="../images/discouraging-factors.png" alt="Discouraging factors">
 
         <hr class="divider">
 
@@ -243,47 +247,29 @@
         <h1 id="visual-design">Visual design</h1>
         <br>
         <h4>App name and logo</h4>
-        <div class="row">
-            <div class="column left50">
-                <img class="standard-img" src="../images/savery-logo-ideas.png" alt="Savery logo ideas">
-            </div>
-            <div class="column right50">
-                <p>
-                    I came up with Savery, a wordplay between ‘savoury’ and ‘save’. As for the logo, I dabbled with and was drawn to the
-                    negative space created by the spine of the uppercase S as it loosely resembled the shape of a wooden spatula. I
-                    generated the variations below and liked the 3rd design, before adding the implied vertical line of the dollar sign on
-                    the 4th and final version.
-                </p>
-            </div>
-        </div>
+        <p>
+            I came up with Savery, a wordplay between ‘savoury’ and ‘save’. As for the logo, I dabbled with and was drawn to the
+            negative space created by the spine of the uppercase S as it loosely resembled the shape of a wooden spatula. I
+            generated the variations below and liked the 3rd design, before adding the implied vertical line of the dollar sign on
+            the 4th and final version.
+        </p>
+        <img class="standard-img" src="../images/savery-logo-ideas.png" alt="Savery logo ideas">
         <br>
         <h4>Colour</h4>
-        <div class="row">
-            <div class="column left50">
-                <img class="standard-img" src="../images/savery-colour.png" alt="Colour green">
-            </div>
-            <div class="column right50">
-                <p>
-                    For the app’s primary colour, I decided on green as it is typically associated with freshness and finance. I also used
-                    green to accent various screen elements such as CTA buttons, tab indicators, checkmarks, radio buttons, and certain
-                    active selections.
-                </p>
-            </div>
-        </div>
+        <p>
+            For the app’s primary colour, I decided on green as it is typically associated with freshness and finance. I also used
+            green to accent various screen elements such as CTA buttons, tab indicators, checkmarks, radio buttons, and certain
+            active selections.
+        </p>
+        <img class="standard-img" src="../images/savery-colour.png" alt="Colour green">
         <br>
         <h4>Typeface</h4>
-        <div class="row">
-            <div class="column left50">
-                <img class="standard-img" src="../images/savery-typeface.png" alt="Typeface">
-            </div>
-            <div class="column right50">
-                <p>
-                    The mastheads of several food magazines and recipe books use serif typefaces, which factored into my rationale for
-                    Savery’s typeface choices. I decided on pairing DM Serif Display with Work Sans. DM Serif is a naturally heavier and
-                    elegant typeface, so it worked well as a H1 header, while Work Sans’s legibility took care of H2 headers and beyond.
-                </p>
-            </div>
-        </div>
+        <p>
+            The mastheads of several food magazines and recipe books use serif typefaces, which factored into my rationale for
+            Savery’s typeface choices. I decided on pairing DM Serif Display with Work Sans. DM Serif is a naturally heavier and
+            elegant typeface, so it worked well as a H1 header, while Work Sans’ legibility took care of H2 headers and beyond.
+        </p>
+        <img class="standard-img" src="../images/savery-typeface.png" alt="Typeface">
         <br>
         <h4>Graphical elements</h4>
         <p>
@@ -413,9 +399,44 @@
             minimized influencing users on how they interacted with the prototypes. By doing so, it was much easier to notice
             the screen elements users were drawn to.
         </p>
-        <br>
-        <br>
-        <a class="black-button" href="../index.html#portfolio">back to portfolio</a>
+
+        <hr class="divider">
+
+        <h4>Thanks for reading! Jump into something else? &#129299</h4>
+        <div class="row">
+            <div class="column left50">
+                <a href="../pages/equippe.html">
+                    <div class="card">
+                        <img class="work-pic" src="../images/equippe-cover.jpg" alt="EquiPPE">
+                        <div class="card-container">
+                            <h4>EquiPPE</h4>
+                            <p class="light-grey">
+                                Case study · Product design · Independent project
+                            </p>
+                            <p>
+                                Directing PPE donations to essential organizations in need during the early stages of the COVID-19 pandemic.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column right50">
+                <a href="https://www.behance.net/thanvin" target="_blank">
+                    <div class="card">
+                        <img class="work-pic" src="../images/other-work-cover.jpg" alt="Other work">
+                        <div class="card-container">
+                            <h4>Beyond the wireframe</h4>
+                            <p class="light-grey">
+                                Animations · 3D modelling · Graphic design · Video editing
+                            </p>
+                            <p>An assortment of my design work outside of UX.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <a class="in-text-link" href="../index.html#portfolio">&#8592  Portfolio</a>
         <div class="filler"></div>
         <div class="filler"></div>
 
@@ -438,7 +459,7 @@
     </div>
 </footer>
 
-<button onclick="topFunction()" id="backtotop">top &#9757&#160;</button>
+<button onclick="topFunction()" id="backtotop">Top &#9757&#160;</button>
 
 <!--- Back to top btn JS --->
 
