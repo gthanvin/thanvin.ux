@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSIPP</title>
+    <meta name="description" content="Redesigning website for a national initiative that connects older adults at risk of social isolation with volunteer healthcare professional students.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/portfoliostyle.css">
+</head>
+
+
+<body>
+
+    <section>
+       
+        <header class="content-wrap header">
+            <a class="menu-back" href="../index.html#portfolio">&#8592 Portfolio</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li class="menu-bullet"><a class="menulink" href="../index.html#portfolio">Portfolio</a></li>
+              <li class="menu-bullet"><a class="menulink" href="../pages/aboutme.html">About me</a></li>
+              <li class="menu-bullet"><a class="menulink" href="#about">Thoughts (stay tuned)</a></li>
+            </ul>
+        </header>
+
+    </section>
+
+
+    <section class="content-wrap">
+
+        <div class="filler"></div>
+        <img class="standard-img" src="../images/ssipp mockup.png" alt="SSIPP website cover">
+        <h1>SSIPP</h1>
+        <p class="light-grey">Website redesign · Case study · Nonprofit</p>
+        <div class="filler"></div>
+        <a class="black-button" href="#prototype">Jump to final redesign</a>
+        
+        <hr class="divider">
+
+        <h4>Project goals &#127919</h4>
+        <p>A friend reached out on behalf of Student-Senior Isolation Prevention Partnership (SSIPP), a national
+            initiative founded in March 2020 by medical students at the University of Toronto. SSIPP operates nine chapters across
+            Canada, fostering comfort in older adults at risk of social isolation over phone calls. Their website was underdeveloped
+            and needed to be more user-friendly. I used this opportunity to focus on aspects critical to good web design, like
+            content auditing, information architecture, analytics, copywriting, and accessibility. I also intend to lay a
+            solid foundation upon which they can update future content.</p>
+        <br>
+        <h4>Tools &#128295</h4>
+        <p>Strikingly, Google Analytics and Tag Manager, Photoshop, Figma</p>
+        <br>
+        <h4>Project duration &#128197</h4>
+        <p>Apr.–May, 2021 (4 weeks)</p>
+        <br>
+        <h4>Quick links &#128007</h4>
+        <a class="jump-to" href="#step1">Step 1: Understanding SSIPP's needs</a>
+        <a class="jump-to" href="#step2">Step 2: What works & what doesn't</a>       
+        <a class="jump-to" href="#step3">Step 3: The redesign</a>
+        <a class="jump-to" href="#visual-design">Visual design</a>
+        <a class="jump-to" href="#final-redesign">Final redesign</a>
+        <a class="jump-to" href="#metrics">Gauging success</a>
+        <a class="jump-to" href="#future-considerations">Future considerations</a>
+
+        <hr class="divider">
+
+        <h1 id="step1">Step 1: Understanding SSIPP's needs</h1>
+        <br>
+        <p>I hosted a Zoom call with three members of SSIPP’s exec team to better understand website goals and what they
+            were looking to get out of this redesign. We agreed upon a one-month project deadline.</p>
+        <br>
+
+        <h4>Website builder</h4>
+        <p>Using a website builder lets SSIPP to continue updating content with ease once I hand it off. They created their
+            original website using Strikingly, to which I suggested switching to Wix, Wordpress, or Squarespace, which offer
+            more features and storage at similar or lower price points. However, SSIPP already renewed their annual
+            subscription few months prior, so switching builders was not an option for this redesign.
+        </p>
+        <br>
+        <h4>Website goals</h4>
+        <ol>
+            <li>Direct healthcare providers and coordinators looking to refer older adults, to their nearest SSIPP chapter</li>
+            <li>Motivate healthcare professional students to get involved as volunteers</li>
+            <li>Interest site visitors to take action, provide information on social isolation, and highlight SSIPP’s services</li>
+        </ol>
+        <p>Note: Referrals and volunteer sign ups are submitted through emails and Google Forms unique to each
+            SSIPP chapter. Perhaps centralizing this process can be a consideration for the future. </p>
+        <br>
+
+        <h4>Target site visitors</h4>
+
+        <img class="standard-img" src="../images/ayesha.png" alt="Ayesha, Nurse Practitioner">
+        <img class="standard-img" src="../images/jamal.png" alt="Jamal, Physician Assistant Student">
+        <br>
+
+        <h4>Website aesthetics</h4>
+        <p>I encouraged the execs to each come up with three words that describe how the website should look, and feelings to evoke in visitors. I used their words as guidance for when I began the redesign:</p>
+        <ul>
+            <li>Clean (x3)</li>
+            <li>Inspiring (x2) </li>
+            <li>Simple</li>
+            <li>Professional</li>
+            <li>Motivating</li>
+            <li>Empowering</li>
+        </ul>    
+        <br>
+
+        <h4>Comparing other websites</h4>
+        <p>Let’s have a glance at the landing pages of four non-profit organizations and how they engage with visitors. What they have in common:</p>
+        <ul>
+            <li>A visible, call-to-action (CTA) button on the top right for easy access</li>
+            <li>Bold opening statements to give visitors a general idea of what the organization is supporting</li>
+            <li>5 to 6 links on the top nav bar</li>
+            <li>High resolution photos for visual impact and emotional appeal</li>     
+        </ul>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/red cross.jpg" target="_blank"><img class="half-pic" src="../images/red cross.jpg" alt="American Red Cross website screenshot"></a>
+                <p>American Red Cross</p>
+                <ul>
+                    <li>Use of red brand colour to accent elements like CTAs</li>
+                    <li>Having a CTA on the splash photo (Donate Now) that is different from CTA on main nav bar (Get Help), allowing them
+                        to promote different actions that may be equally important</li>
+                </ul>
+            </div>
+            <div class="column right50">
+                <a href="../images/habitat for humanity.jpg" target="_blank"><img class="half-pic" src="../images/habitat for humanity.jpg" alt="Habitat for Humanity website screenshot"></a>
+                <p>Habitat for Humanity</p>
+                <ul>
+                    <li>Choice of photo with the sky, further driving their brand colour (blue)</li>
+                    <li>Orange CTA button is complementary to blue</li>
+                    <li>Dedicating a secondary nav bar to highlight CTA and search functions, separate from the main nav bar</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/red cross.jpg" target="_blank"><img class="half-pic" src="../images/thorn.jpg" alt="Thorn website screenshot"></a>    
+                <p>Thorn</p>
+                <ul>
+                    <li>Monochromatic splash photo, text, and CTAs emphasize their orange brand colour</li>
+                    <li>A lightly faded splash photo with a smiling girl negates, in a positive manner, the heavy issue Thorn is targeting</li>
+                    <li>Elements are spaced out, giving the website a fresher feel relative to most NPO websites</li>
+                </ul>
+            </div>
+            <div class="column right50">
+                <a href="../images/second harvest.jpg" target="_blank"><img class="half-pic" src="../images/second harvest.jpg" alt="Second Harvest website screenshot"></a>
+                <p>Second Harvest</p>
+                <ul>
+                    <li>Photo features a green cutting board, broccoli, and a red sweatshirt, which are synonymous with brand colours</li>
+                    <li>Clean splash photo with a bold statement</li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="divider">
+
+        <h1 id="step2">Step 2: What works & what doesn't</h1>
+        <br>
+        <h4>Analytics and SEO</h4>
+        <p>SSIPP had not linked Google Analytics to their website, but Strikingly luckily had a few basic metrics seen in the
+            figure below. The values shown are reflective of unique visitors in the last 90 days.</p>
+        
+        <img class="standard-img" src="../images/analytics before revamp.jpg" alt="Analytics stats before redesign">
+
+        <p>There is a noticeable drop in visitors between the homepage (553) and <em>Get Involved!</em> (153) with a conversion rate of
+            28% - a key area for improvement. The website is accessed mostly through desktop (77%), over mobile (23%), which
+            helps prioritize layout design towards the former. Google is a major traffic route, but I noticed SSIPP left pages’
+            title tags and meta descriptions blank, which could significantly hinder site visibility on search engines. After
+            redesigning the site, I made sure to fill in those fields, as well as adding alt text to images.</p>
+            <br>
+
+        <div class="row">
+            <div class="column left50">
+                <img class="half-pic" src="../images/SEO after revamp.JPG" alt="SEO fields filled in">
+            </div>
+            <div class="column right50">
+                <img class="half-pic" src="../images/ssipp_alt text.JPG" alt="Alt text added to images">
+            </div>
+        </div>
+
+        <div class="filler"></div>
+
+        <h4>Info architecture and page-by-page audit</h4>
+        <p>I mapped out the current info architecture (IA) and captured page screenshots. I noted what
+            already works, suggested areas for improvement, and generated a revised IA.</p>
+        
+        <img class="standard-img" src="../images/ssipp_current_IA.png" alt="Current info architecture">
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_homepage.png" target="_blank"><img class="half-pic" src="../images/ssipp_homepage.png" alt="Current homepage"></a>  
+            </div>
+            <div class="column right50">
+                <p><em>Homepage</em></p>  
+                <p>What works</p>
+                <ul>
+                    <li>High-contrast navigation bar</li>
+                    <li>CTA button draws attention</li>
+                    <li>Organization name is present</li>
+                </ul>
+                <p>To improve</p>
+                <ul>
+                    <li>At first glance and without scrolling down, the visitors are unable to gather much on what SSIPP is about</li>
+                    <li>Rename <em>Get Involved!</em> CTA button to organization-specific actions, like <em>Refer an Older Adult</em> and <em>Join a
+                        Chapter</em>, making it easier for visitors to quickly find relevant info</li>
+                    <li><em>About SSIPP</em> and <em>About Us</em> buttons are indistinguishable in meaning; consider renaming the latter to <em>Our Team</em></li>
+                    <li>Low contrast between thin, small orange text on white background</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_about social isolation.png" target="_blank"><img class="half-pic" src="../images/ssipp_about social isolation.png" alt="Current about social isolation page"></a>
+            </div>
+            <div class="column right50">
+                <p><em>About Social Isolation</em></p>  
+                <p>What works</p>
+                <ul>
+                    <li>Bolded statement creates a strong presence</li>
+                    <li>Large background photo for emotional impact</li>
+                </ul>
+                <p>To improve</p>
+                <ul>
+                    <li>Low contrast between paragraph text colour and background image</li>
+                    <li>Space can be better utilized to present additional info</li>
+                    <li>Risk factors and consequences could be better read as a list</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_about ssipp.png" target="_blank"><img class="half-pic" src="../images/ssipp_about ssipp.png" alt="Current about SSIPP page"></a>
+            </div>
+            <div class="column right50">
+                <p><em>About SSIPP</em></p>
+                <p>What works</p>
+                <ul>
+                    <li>Mission and vision statements are present</li>
+                    <li>Good choice of background photo for emotional impact</li>
+                </ul>
+                <p>To improve</p>
+                <ul>
+                    <li>Low contrast between text and background image</li>
+                    <li>A short description detailing each service would benefit visitors</li>
+                    <li>Low contrast between orange text and icons, against the grey background</li>
+                    <li><em>Why should I get involved?</em> section would be more relevant under the <em>Get Involved!</em> page and would benefit from a higher placement on the page</li>
+                    <li>Swiping to read each point is time consuming; should rather present all points in one shot</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_ssipp x covid19.png" target="_blank"><img class="half-pic" src="../images/ssipp_ssipp x covid19.png" alt="Current SSIPP x COVID-19 page"></a>
+            </div>
+            <div class="column right50">
+                <p><em>SSIPP x COVID-19</em></p>
+                <p>To improve</p>
+                <ul>
+                    <li>Page lacks visual hierarchy and is text-heavy</li>
+                    <li>Page lists chapters’ contact info, which is redundant as it is already listed under the <em>Get Involved!</em> page</li>
+                    <li>Resource listings are redundant and should be combined with the ones under <em>About Social Isolation</em> page</li>
+                    <li>Are the emails up to date?</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_media.png" target="_blank"><img class="half-pic" src="../images/ssipp_media.png" alt="Current media page"></a>
+            </div>
+            <div class="column right50">
+                <p><em>Media</em></p>
+                <p>To improve</p>
+                <ul>
+                    <li>News should be listed from the newest first</li>
+                    <li>Twitter link on top of page can be missed easily</li>
+                    <li>Some links are repeats</li>
+                    <li>Media inquiry fields at the bottom of the page could be easily missed</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_about us.png" target="_blank"><img class="half-pic" src="../images/ssipp_about us.png" alt="Current about us page"></a>
+            </div>
+            <div class="column right50">
+                <p><em>About Us</em></p>
+                <p>What works</p>
+                <ul>
+                    <li>Good use of photos, although adding faces for those on the executive team would enhance trust and make the site more
+                        personable for visitors</li>
+                </ul>
+                <p>To improve</p>
+                <ul>
+                    <li>Space taken up by team listings could be condensed</li>
+                    <li>Are the team members list up to date?</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_get involved.png" target="_blank"><img class="half-pic" src="../images/ssipp_get involved.png" alt="Current get involved page"></a>
+            </div>
+            <div class="column right50">
+                <p><em>Get Involved</em></p>
+                <p>What works</p>
+                <ul>
+                    <li>Chapters’ contact info is clear</li>
+                </ul>
+                <p>To improve</p>
+                <ul>
+                    <li>The main purpose of the website is to direct referrals of older adults to the nearest SSIPP chapter, so details
+                        pertaining to that goal should come first before volunteering info</li>
+                    <li>Are the links and emails up to date?</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <h4>General comments</h4>
+        <ul>
+            <li>Does SSIPP engage with social media? No links are seen.</li>
+            <li>Make font sizes, styles, and colours consistent across the website</li>
+            <li>Ensure high contrast between text and background images for easier reading</li>
+        </ul>
+
+        <hr class="divider">
+
+        <h1 id="step3">Step 3: The redesign</h1>
+        <br>
+        <h4>Revised info architecture</h4>
+        <img class="standard-img" src="../images/ssipp_revised_IA.png" alt="Revised info architecture">
+        <br>
+        <p>I condensed and streamlined the website’s IA by changing the following:</p>
+        <ul>
+            <li>Homepage features previews of subpages, enticing visitors to learn more</li>
+            <li>Removed <em>Home</em> link to save space; logo on the top nav bar acts as link to homepage</li>
+            <li>Renamed <em>Media</em> to <em>News & Events</em> to drive page visits by visitors not associated with the media per se, as well as featuring upcoming or recent events</li>
+            <li>Renamed <em>About Us</em> to <em>Our Team</em>, which distinguishes it from <em>About SSIPP</em></li>
+            <li>Although referrals and volunteer forms are separate goals, they are both chapter-specific, so it made sense to combine them into a single page, <em>Referrals & Volunteering</em> (formerly <em>Get Involved!</em>). This is easier for site visitors like Ayesha and Jamal to find the info they are looking for.</li>
+            <li>Relocated inquiries form to the footer so visitors will have access to it at all times</li>
+        </ul>
+        <br>
+        <h4>Lo-fi wireframes</h4>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_lofi_homepage.png" target="_blank"><img class="half-pic" src="../images/ssipp_lofi_homepage.png" alt="Homepage lo-fi wireframe"></a>
+            </div>
+            <div class="column right50">
+                <p><em>Homepage</em></p>
+                <ol>
+                    <li>Bold statement accompanied by a short description lets visitors to quickly identify the issue SSIPP is targeting</li>
+                    <li>Featuring a video SSIPP execs wanted to include on website landing</li>
+                    <li>A relatable set of statements regarding social isolation, enticing visitors to learn more about the issue; also acts as a second chance to direct visitors to the <em>About Social Isolation</em> subpage</li>
+                    <li>Highlighting news and events to get visitors caught up with what SSIPP has done lately</li>
+                    <li>A personable introduction of the SSIPP team to promote trust in the visitors</li>
+                    <li>Now that visitors are more familiar with SSIPP, the website can encourage them to take action</li>
+                    <li>Visitors also have the option to navigate to subpages from the footer, follow social media, and submit inquiries or feedback; appears across all subpages</li>
+                </ol>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_lofi_about ssipp.png" target="_blank"><img class="half-pic" src="../images/ssipp_lofi_about ssipp.png" alt="About SSIPP lo-fi wireframe"></a>
+            </div>
+            <div class="column right50">
+                <p><em>About SSIPP</em></p>
+                <ol>
+                    <li>Service descriptions provide visitors with more details on how SSIPP helps fight social isolation</li>
+                    <li>Execs asked to include a list of organizations that have listed SSIPP as a community resource</li>
+                </ol>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_lofi_about social isolation.png" target="_blank"><img class="half-pic" src="../images/ssipp_lofi_about social isolation.png" alt="About Social Isolation lo-fi wireframe"></a>
+            </div>
+            <div class="column right50">
+                <p><em>About Social Isolation</em></p>
+                <ol>
+                    <li>A significant statistic or fact to illustrate the seriousness of social isolation</li>
+                    <li>Risk factors and consequences are presented in a list form for better readability</li>
+                </ol>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_lofi_news and events.png" target="_blank"><img class="half-pic" src="../images/ssipp_lofi_news and events.png" alt="News and Events lo-fi wireframe"></a>
+            </div>
+            <div class="column right50">
+                <p><em>News & Events</em></p>
+                <ol>
+                    <li>SSIPP can use this space to highlight an upcoming event or recent news story/event</li>
+                    <li>List of news and events sorted by most recent. I was hoping Strikingly would offer a ‘load more’ feature to save page length, but it was not the case.</li>
+                </ol>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_lofi_our team.JPG" target="_blank"><img class="half-pic" src="../images/ssipp_lofi_our team.JPG" alt="Our Team lo-fi wireframe"></a>
+                <p><em>Our team</em></p>
+            </div>
+            <div class="column right50">
+                <a href="../images/ssipp_lofi_referrals and volunteering.png" target="_blank"> <img class="half-pic" src="../images/ssipp_lofi_referrals and volunteering.png" alt="Referrals and Volunteering lo-fi wireframe"></a>
+                <p><em>Referrals & Volunteering</em></p>
+                <ol>
+                    <li>University chapter listings with respective emails for referrals and links to volunteer sign-up forms</li>
+                </ol>
+            </div>
+        </div>
+        <br>
+
+        <h4>Mid-fi wireframes</h4>
+        <p>I used Figma to block out higher fidelity wireframes of the envisioned website layout.
+            I also focused on copywriting for which I worked closely with an exec to ensure the tone and message aligned with how
+            SSIPP wishes to be perceived by site visitors.
+        </p>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_mid_homepage.png" target="_blank"><img class="half-pic" src="../images/ssipp_mid_homepage.png" alt="Homepage mid-fi wireframe"></a>
+                <p><em>Homepage</em></p>
+            </div>
+            <div class="column right50">
+                <a href="../images/ssipp_mid_about ssipp.png" target="_blank"> <img class="half-pic" src="../images/ssipp_mid_about ssipp.png" alt="About SSIPP mid-fi wireframe"></a>
+                <p><em>About SSIPP</em></p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_mid_about social isolation.png" target="_blank"><img class="half-pic" src="../images/ssipp_mid_about social isolation.png" alt="About Social Isolation mid-fi wireframe"></a>
+                <p><em>About Social Isolation</em></p>
+            </div>
+            <div class="column right50">
+                <a href="../images/ssipp_mid_news and events.png" target="_blank"> <img class="half-pic" src="../images/ssipp_mid_news and events.png" alt="News and Events mid-fi wireframe"></a>
+                <p><em>News & Events</em></p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_mid_our team.png" target="_blank"><img class="half-pic" src="../images/ssipp_mid_our team.png" alt="Our Team mid-fi wireframe"></a>
+                <p><em>Our Team</em></p>
+            </div>
+            <div class="column right50">
+                <a href="../images/ssipp_mid_referrals and volunteering.png" target="_blank"><img class="half-pic" src="../images/ssipp_mid_referrals and volunteering.png" alt="Referrals and Volunteering mid-fi wireframe"></a>
+                <p><em>Referrals & Volunteering</em></p>
+            </div>
+        </div>
+       
+        <hr class="divider">
+
+        <h1 id="visual-design">Visual design</h1>
+        <br>
+        <h4>Colours & branding</h4>
+        <p>I kept the website consistent with the organization’s colours, orange and dark grey. I used orange to accent photos,
+            buttons, and captions, while assigning dark grey to header and paragraph text. </p>
+        <img class="standard-img" src="../images/ssipp_colours.png" alt="Orange accents for photos, buttons, and captions">
+        <h4>Graphical elements</h4>
+        <p>I enhanced the emotional appeal of the website using photos obtained and modified through Pexels and Unsplash.
+            Despite the seriousness of social isolation, I chose to evoke hope in visitors by tinting the photos with a soft orange
+            tone. These photos also work to balance out certain text heavy sections on the website. </p>
+        <br>
+        <h4>Typeface</h4>
+        <p>I initially planned to pair serif and sans-serif typefaces for headers and paragraph text, respectively. However,
+            Strikingly did not allow for this as I explain further under future considerations. I settled on Roboto as it works
+            decently as a header, and even more so as a legible paragraph font.</p>
+
+        <hr class="divider">
+
+        <h1 id="final-redesign">Final redesign</h1>
+        <br>
+        <p>View the redesigned website at <a class="in-text-link" href="https://www.ssipp.info/" target="blank">ssipp.info</a>.
+            Certain elements may have changed since, so below are screenshots of the redesign at the time of completion.
+            Note, footers on subpages were cropped to save space.</p>
+        
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_final_homepage.png" target="_blank"><img class="half-pic" src="../images/ssipp_final_homepage.png" alt="Homepage redesign"></a>
+                <p><em>Homepage</em></p>
+            </div>
+            <div class="column right50">
+                <a href="../images/ssipp_final_about ssipp.png" target="_blank"> <img class="half-pic" src="../images/ssipp_final_about ssipp.png" alt="About SSIPP redesign"></a>
+                <p><em>About SSIPP</em></p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_final_about social isolation.png" target="_blank"><img class="half-pic" src="../images/ssipp_final_about social isolation.png" alt="About Social Isolation redesign"></a>
+                <p><em>About Social Isolation</em></p>
+            </div>
+            <div class="column right50">
+                <a href="../images/ssipp_final_news and events.png" target="_blank"> <img class="half-pic" src="../images/ssipp_final_news and events.png" alt="News and Events redesign"></a>
+                <p><em>News & Events</em><br>
+                    *19 news items were cropped from this screenshot to save space.</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="column left50">
+                <a href="../images/ssipp_final_our team.png" target="_blank"><img class="half-pic" src="../images/ssipp_final_our team.png" alt="Our Team redesign"></a>
+                <p><em>Our Team</em><br>
+                    *7 national exec members were cropped to save space. I used placeholder graphics for missing headshots and left space for blurbs, which SSIPP will add at a later date.</p>
+            </div>
+            <div class="column right50">
+                <a href="../images/ssipp_final_referrals and volunteering.png" target="_blank"> <img class="half-pic" src="../images/ssipp_final_referrals and volunteering.png" alt="Referrals and Volunteering redesign"></a>
+                <p><em>Referrals & Volunteering</em></p>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <h1 id="metrics">Gauging success</h1>
+        <br>
+        <p>I linked the website with a Google Analytics UA (Universal Analytics) code, which tracks essential metrics such as
+            page view counts, bounce rates, average time spent on a page, etc. I also created triggers using Google Tag Manager
+            to track site visitors interacting with email and volunteer form links on the Referrals & Volunteering page, which
+            are critical to SSIPP’s success. I intend to report back on site performance after a month or two have passed, stay tuned.</p>
+        
+        <img class="standard-img" src="../images/ssipp_tag manager triggers.JPG" alt="Tag manager triggers">
+        <img class="standard-img" src="../images/ssipp_metrics chart.JPG" alt="Metric to gauge success">
+
+        <hr class="divider">
+
+        <h1 id="future-considerations">Future considerations</h1>
+        <br>
+        <h4>Centralize volunteer forms</h4>
+        <p>SSIPP is a fast-growing organization that will continue to serve older adults at risk of social isolation well beyond
+            this pandemic. To this end, having a centralized volunteer form, either on a third-party host or on the website
+            itself, may prove beneficial. This would also make it easier to analyze volunteer data across the entire
+            organization, as it would no longer be siloed between chapters.</p>
+        <br>
+        <h4>Switch website builders</h4>
+        <p>Strikingly is decent, but does not offer the flexibility, competitive pricing, and user-friendliness of Wix,
+            Squarespace, or Wordpress. It challenged me to generate work-arounds as some of my earlier design decisions were
+            impacted by Strikingly’s drawbacks. I suggest SSIPP considers switching builders down the line, and
+            submitted feedback to Strikingly (effective May, 2021) in hopes they improve their product for future users.</p>
+        <div class="filler"></div>
+        <a class="black-button" href="../images/Strikingly_feedback.pdf" target="_blank">Feedback to Strikingly</a>
+        <div class="filler"></div>
+
+        <hr class="divider">
+
+        <h4>Thanks for reading! Jump into something else? &#129299</h4>
+        <div class="row">
+            <div class="column left50">
+                <a href="../pages/savery.html">
+                    <div class="card">
+                        <img class="work-pic" src="../images/savery-cover.jpg" alt="Savery">
+                        <div class="card-container">
+                            <h4>Savery</h4>
+                            <p class="light-grey">
+                                Case study · Product design · Collaborative project
+                            </p>
+                            <p>Centralizing recipes, grocery offers, and expense tracking for an easier meal-planning experience.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column right50">
+                <a href="../pages/equippe.html">
+                    <div class="card">
+                        <img class="work-pic" src="../images/equippe-cover.jpg" alt="A navy blue app logo beside a teal face mask">
+                        <div class="card-container">
+                            <h4>EquiPPE</h4>
+                            <p class="light-grey">
+                                Case study · Product design · Independent project
+                            </p>
+                            <p>
+                                Directing PPE donations to essential organizations in need during the early stages of the COVID-19 pandemic.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <a class="in-text-link" href="../index.html#portfolio">&#8592  Portfolio</a>
+        <div class="filler"></div>
+        <div class="filler"></div>
+
+    </section>
+
+
+<footer>
+    <div class="content-wrap">
+        <h4 class="white-text letschat">
+            <nobr>Let's chat!</nobr>
+        </h4>
+        <div class="contact">
+            <a href="mailto:gthanvin@gmail.com"><img src="../images/email.png"></a>
+            <a href="https://linkedin.com/in/thanvin/" target="_blank"><img src="../images/linkedin.png"></a>
+            <a href="https://instagram.com/tgexplores/" target="_blank"><img src="../images/instagram.png"></a>
+        </div>
+        <p class="white-text copyright">
+            Copyright &#169 2021 Thanvin Giridhar. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<button onclick="topFunction()" id="backtotop">Top &#9757&#160;</button>
+
+<!--- Back to top btn JS --->
+
+<script>
+
+var mybutton = document.getElementById("backtotop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+</body>
+
+</html>
