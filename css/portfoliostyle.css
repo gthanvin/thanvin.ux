@@ -439,12 +439,12 @@ footer {
 /*TIMELINE--------------------------------------------------*/
 
 .about-me-spacing {
-    padding-top: 100px;
+    padding-top: 75px;
 }
 
 .timeline {
     position: relative;
-    padding: 10px 10px 10px 50px;
+    padding: 0px 10px 0px 50px;
     max-width: 1000px;
 }
 
@@ -501,6 +501,14 @@ div.integrate::after {
 
 div.branch::after {
     content: "💻";
+    font-size: 24px;
+    position: absolute;
+    top: 30px;
+    left: -50px;
+}
+
+div.caughtup::after {
+    content: "✅";
     font-size: 24px;
     position: absolute;
     top: 30px;
