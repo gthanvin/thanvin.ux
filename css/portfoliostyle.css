@@ -396,7 +396,7 @@ footer {
 }
 
 .about-me-title {
-    padding-top: 107px;
+    padding-top: 70px;
     padding-left: 15px;
 }
 
@@ -473,6 +473,14 @@ div.event::before {
     border-left: 0;
     position: absolute;
     top: 20%;
+}
+
+div.journey::after {
+    content: "👋";
+    font-size: 24px;
+    position: absolute;
+    top: 30px;
+    left: -50px;
 }
 
 div.creative::after {
