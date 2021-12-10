@@ -26,7 +26,7 @@ h1, h4, li {
 }
 
 p {
-    color: black;
+    color: rgba(41,47,54,100%);
 }
 
 .white-text {
@@ -34,44 +34,44 @@ p {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 24px;
-    font-weight: 300;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 ul, ol {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
     margin: 0px;
 }
 
 .light-grey {
-    font-size: 20px;
-    font-weight: 300;
-    color: #8F96A3;
+    font-size: 16px;
+    font-weight: 400;
+    color: #738396;
 }
 
 .quote-align {
-    margin: 25px 50px 10px 50px;
+    margin: 25px 15px 5px 15px;
 }
 
 .quote-reference-align {
-    margin: 0px 50px 20px 50px;
+    margin: 0px 15px 10px 15px;
 }
 
 a {
@@ -90,8 +90,8 @@ a:hover {
 
 .jump-to {
     display: block;
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
     padding: 0;
 }
 
@@ -100,10 +100,11 @@ a:hover {
 }
 
 .in-text-link {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(41,47,54,75%);
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0;
 }
 
@@ -143,7 +144,7 @@ a:hover {
     text-decoration: none;
     color:  rgba(235,242,250,100%);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     padding: 15px 20px;
     border-radius: 100px;
     background-color: rgba(41,47,54,100%);
@@ -164,7 +165,7 @@ a:hover {
     color: rgba(235,242,250,100%);
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     padding: 15px;
     cursor: pointer;
     border: none;
@@ -228,7 +229,7 @@ hr.divider {
     float: left;
     padding: 25px 0px 0px 0px;
     position: relative;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: 12px;
     margin-bottom: 12px;
@@ -339,7 +340,7 @@ hr.divider {
 }
 
 .card-container {
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .work-pic {
@@ -370,7 +371,7 @@ footer {
 }
 
 .contact a {
-    margin: 24px 12px;
+    margin: 24px 6px;
 }
 
 .copyright {
@@ -396,7 +397,7 @@ footer {
 }
 
 .about-me-title {
-    padding-top: 70px;
+    padding-top: 10px;
     padding-left: 15px;
 }
 
@@ -476,16 +477,16 @@ div.event::before {
 }
 
 div.journey::after {
-    content: "👋";
-    font-size: 24px;
+    content: "🚗";
+    font-size: 22px;
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: -50px;
 }
 
 div.creative::after {
     content: "🎨";
-    font-size: 24px;
+    font-size: 22px;
     position: absolute;
     top: 30px;
     left: -50px;
@@ -493,7 +494,7 @@ div.creative::after {
 
 div.grad::after {
     content: "🎓";
-    font-size: 24px;
+    font-size: 22px;
     position: absolute;
     top: 30px;
     left: -50px;
@@ -501,7 +502,7 @@ div.grad::after {
 
 div.integrate::after {
     content: "💼";
-    font-size: 24px;
+    font-size: 20px;
     position: absolute;
     top: 30px;
     left: -50px;
@@ -509,7 +510,7 @@ div.integrate::after {
 
 div.branch::after {
     content: "💻";
-    font-size: 24px;
+    font-size: 22px;
     position: absolute;
     top: 30px;
     left: -50px;
@@ -517,7 +518,7 @@ div.branch::after {
 
 div.caughtup::after {
     content: "✅";
-    font-size: 24px;
+    font-size: 20px;
     position: absolute;
     top: 30px;
     left: -50px;
@@ -614,11 +615,11 @@ div.caughtup::after {
     }
 
     .quote-align {
-        margin: 25px 25px 10px 25px;
+        margin: 15px 15px 5px 15px;
     }
 
     .quote-reference-align {
-        margin: 0px 25px 50px 25px;
+        margin: 0px 15px 20px 15px;
     }
     
     .intro {
