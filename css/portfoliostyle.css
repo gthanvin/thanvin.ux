@@ -132,7 +132,7 @@ a:hover {
     padding: 15px 20px;
     border-radius: 100px;
     background-color: rgba(235,242,250,100%);
-    box-shadow: 5px 8px 8px rgba(40,27,0,8%)
+    box-shadow: 3px 3px 5px rgba(40,27,0,10%)
 }
 
 .white-button:hover {
@@ -148,7 +148,7 @@ a:hover {
     padding: 15px 20px;
     border-radius: 100px;
     background-color: rgba(41,47,54,100%);
-    box-shadow: 5px 8px 8px rgba(40,27,0,8%)
+    box-shadow: 3px 3px 5px rgba(40,27,0,10%)
 }
 
 .black-button:hover {
@@ -663,6 +663,30 @@ div.caughtup::after {
     .letschat {
         text-align: center;
         padding: 0;
+    }
+
+    div.journey::after {
+        left: -47px;
+    }
+    
+    div.creative::after {
+        left: -47px;
+    }
+    
+    div.grad::after {
+        left: -47px;
+    }
+    
+    div.integrate::after {
+        left: -47px;
+    }
+    
+    div.branch::after {
+        left: -47px;
+    }
+    
+    div.caughtup::after {
+        left: -47px;
     }
 }
 
