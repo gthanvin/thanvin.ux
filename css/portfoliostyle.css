@@ -501,8 +501,8 @@ div.grad::after {
 }
 
 div.integrate::after {
-    content: "💼";
-    font-size: 20px;
+    content: "🤝";
+    font-size: 22px;
     position: absolute;
     top: 30px;
     left: -50px;
