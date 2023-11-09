@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myant</title>
+    <meta name="description" content="Designing a web portal to assist clinicians in reviewing ECG captured by Myant's wearable tech.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/portfoliostyle.css">
+</head>
+
+
+<body>
+
+    <section>
+       
+        <header class="content-wrap header">
+            <a class="menu-back" href="../index.html#portfolio">&#8592 Portfolio</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li class="menu-bullet"><a class="menulink" href="../index.html#portfolio">Portfolio</a></li>
+              <li class="menu-bullet"><a class="menulink" href="../index.html#writing">Writing</a></li>
+              <li class="menu-bullet"><a class="menulink" href="../pages/aboutme.html">About me</a></li>
+            </ul>
+        </header>
+
+    </section>
+
+
+    <section class="content-wrap">
+
+        <div class="filler"></div>
+        <h1>Myant</h1>
+        <p class="light-grey">Formative research · Summative test · SaMD</p>
+        <img class="standard-img" src="../images/myant-page-cover.JPG" alt="Myant ecosystem">
+
+        <h4>Company overview</h4>
+        <p>Myant’s product ecosystem empowers its users to better manage their cardiovascular health and stay connected to those
+            involved in their care. The company’s proprietary Skiin garments capture medical-grade ECG and other biometrics that
+            are relayed to a mobile app, where users track their health and log symptoms. Users enrolled as patients at
+            partnered clinics will have their symptoms and associated ECG reviewed by healthcare professionals (HCPs) through
+            the Myant Virtual Clinic Portal (MVCP), which is a Class II Software as a Medical Device (SaMD).</p>
+        <br>
+        <h4>My role</h4>
+        <p>I joined Myant during its transition from a wellness to a medical focus, which introduced design control and a more
+            phased approach to product development. I co-managed a UX team of 5, where I wore many hats to support work across
+            the UX pipeline ranging from research, design, testing, and documentation. This case study discusses the approach
+            and findings at a high-level on select areas of the MVCP’s development process such as persona research, site
+            architecture, and summative testing, while respecting non-disclosure agreements.</p>
+        <br>
+        <h4>Tools &#128295</h4>
+        <p>Figma, Miro, Usertesting.com, Mazo.co, Google Forms</p>
+
+        <hr class="divider">
+
+        <h1 id="research">Formative research</h1>
+        <br>
+        <h4>Background</h4>
+        <p>HCPs run clinical operations on a tight timeline in order to provide care to the most patients possible on a given
+            day. This includes optimizing time spent on different software. As a result, it was imperative to design the MVCP to
+            be easily adoptable as part of clinical practices and mental models. We specifically aimed to further define the
+            personas of cardiac technicians and cardiologists, as they are the primary intended users of the MVCP.
+        </p>
+        <br>
+
+        <h4>Methods and findings</h4>
+        <p>We set up an unmoderated online survey to gather qualitative data from both user groups. Participants were screened
+            and recruited through Usertesting.com, and Myant’s network of clinics. We generated a series of questions to better
+            understand the motivations, needs and pain points of cardiac technicians and cardiologists. We also included a video
+            that provided a concept overview of Skiin garments, mobile application, and MVCP. Below is a sample of questions to
+            which participants provided a combination of verbal and written responses.
+        </p>
+        <ul>
+            <li>What are the main tasks and responsibilities in your role?</li>
+            <li>Can you describe your workflow, including any challenges faced?</li>
+            <li>Please list any digital software you use and how you use it</li>
+            <li>(In reference to the MVCP video) What are your first impressions of what you just watched? What is the most
+                compelling part of the product to you? What is the least compelling?</li>
+        </ul>
+        <br>
+        
+        <p>The responses were mapped onto a Miro board, as seen below.</p>  
+        <img class="standard-img" src="../images/cardiac-tech-insight-mapping.jpg" alt="Cardiac tech insight mapping">
+        <img class="standard-img" src="../images/cardiologist-insight-mapping.jpg" alt="Cardiologist insight mapping">   
+
+        <p>As a follow up, we brought back some participants for a live, moderated interview. We dove deeper into topics that
+            emerged from the unmoderated surveys such as patient compliance and adherence, types of information that aid the
+            diagnostic process, tools used, and consultations. Questions included:
+        </p>
+        <ul>
+            <li>How are patients referred to your clinic and describe the onboarding process? What are some challenges during this process?</li>
+            <li>What are benefits and challenges associated with prescribing patients Holter monitors? Would Myant’s product offering help alleviate any challenges?</li>
+            <li>How would having other biometrics alongside ECG data help with your diagnostic process?</li>
+            <li>How do you keep track of patient health post-consultation?</li>
+        </ul>
+
+        <p>Based on all the insights gathered, we had enough to form a persona card for both user groups outlining their
+            motivations, priorities, pain points, and how Myant's product offering may benefit their practice.
+        </p>  
+        <img class="standard-img" src="../images/cardiac-tech-persona.png" alt="Cardiac tech persona">
+        <img class="standard-img" src="../images/cardiologist-persona.png" alt="Cardiologist persona">
+
+        <p>Further down the research phase, we conducted card sorting exercises on Maze.co to understand how
+            participants would structure and access various pieces of information on the MVCP.
+            We first conducted an unmoderated open card sort, where participants sorted information into groups and labeled
+            them based on their own understanding and perspective. Despite the low agreement percentages, many group labels
+            shared similar words. We referred to session recordings to understand the participants' reasoning.
+        </p>
+        <img class="standard-img" src="../images/mvcp-open-card-sort.JPG" alt="Open card sort agreement rate">
+        
+        <p>We then conducted a closed card sort, where participants sorted cards into categories created by us.
+            The closed card sort set up and results are shown in the screenshots below. Participants categorized cards
+            into similar groupings as evidenced by the high rates of agreement, which informed the MVCP's site architecture.
+        </p>
+        <img class="standard-img" src="../images/mvcp-closed-card-sort-1.JPG" alt="Closed card sort setup">
+        <img class="standard-img" src="../images/mvcp-closed-card-sort-results.JPG" alt="Closed card sort results">
+
+
+        <hr class="divider">
+    
+        <h1 id="solution">Orchestrating a summative test</h1>
+        <br>
+        <h4>Background</h4>
+        <p>A summative is a usability test to validate that medical devices, like the MVCP, are safe and effective for their
+            intended use. This was a part of our regulatory submission to Health Canada to obtain a Class II Software as a
+            Medical Device clearance.
+        </p>
+        <br>
+
+        <h4>Objectives</h4>
+        <p>The purpose of our summative test was to determine whether the MVCP conforms to the usability engineering guidelines
+            set by IEC-62366. Objectives include assessing:
+        </p>
+        <ul>
+            <li>Proper use of interfaces</li>
+            <li>Ability for users to understand and follow instructions</li>
+            <li>Mitigations for potential errors or adverse events</li>
+        </ul>
+        <br>
+
+        <h4>Recruiting target participants</h4>
+        <p>We worked with our network of clinics to recruit a combination of 7 cardiac technicians and cardiologists who were
+            unfamiliar with using the MVCP. For the summative test, they would perform key tasks associated with the MVCP’s
+            indication for use like symptom log and ECG data review.
+        </p>
+        <br>
+
+        <h4>Test environment setup</h4>
+        <p>We worked with the software team to create a test environment, including mock patients, symptoms and ECG data for
+            participants to interact with. Additionally, there was a test space allocated at the partnered cardiac clinic to
+            simulate representative conditions.
+        </p>
+        <br>
+
+        <h4>Methods</h4>
+        <p>Each test session was conducted by a moderator and an observer, lasting between 30-45 minutes in duration. We began
+            the test session by understanding our test participants’ proficiency and comfort with using digital technology in
+            order to uncover potential correlations with task performance post-test. Using a 7-point Likert scale afforded an
+            appropriate balance between objectivity while allowing some nuance, and this scale was used through much of the
+            summative test.
+        </p>
+        <ol>
+            <li>What is your age range?<br>
+                18-24, 25-34, 35-44, 45-54, 55-64, 65+, Prefer to not say
+            </li>
+            <li>What would you rate your overall comfort level with technology?<br>
+                1 Not at all comfortable → 7 Very comfortable
+            </li>
+            <li>How would you describe your ability to use technology such as computer software?<br>
+                1 Not able at all → 7 Very able
+            </li>
+            <li>I am open to, or regularly adopt, new technologies as part of my practice.<br>
+                1 Strongly disagree → 7 Strongly agree 
+            </li>
+        </ol>
+        <br>
+
+        <p>The moderator then read out the scenario, followed by the participant performing the task on the MVCP. The
+            participant was encouraged to think out loud as they performed the task. The observer noted the path taken by the
+            user to complete the task and validated that against the usability specifications. After the participant completed
+            the task, they answered questions on Google Forms relating to the task such as:
+        </p>
+        
+        <ul>
+            <li>
+                <h4>Objective questions</h4>
+                Were you able to change the ECG viewer settings?<br>
+                Yes, I was able to / No I was unable to<br>
+                Acceptance criteria: Yes, I was able to (Acceptable) / No, I was unable to (Unacceptable)
+            </li>
+            <li>
+                <h4>Satisfactions questions</h4>
+                I was able to review ECG data efficiently.<br>
+                1 Strongly disagree → 7 Strongly agree<br>
+                Acceptance criteria: 1-3 Negative / 4 Neutral / 5-7 Positive
+            </li>
+            <li>
+                <h4>User experience questions</h4>
+                While using the ECG viewer, I felt…<br>
+                1 Unsure → 7 Confident<br>
+                Acceptance criteria: 1-3 Unacceptable / 4-7 Acceptable
+            </li>
+            <li>
+                <h4>Safety and risk assessment questions</h4>
+                There was adequate safeguard against accidental removal of patients.<br>
+                1 Strongly disagree → 7 Strongly agree<br>
+                Acceptance criteria: 1-3 Unacceptable / 4-7 Acceptable
+            </li>
+            <li>
+                <h4>Time on task questions</h4>
+                The time it took to create my account felt...<br>
+                1 Too long → 7 Appropriate length<br>
+                Acceptance criteria: 1-3 Negative / 4 Neutral / 5-7 Positive
+            </li>
+            <li>
+                <h4>Overall impression questions</h4>
+                Based on the tasks performed today, I found the MVCP easy to use.<br>
+                1 Strongly disagree → 7 Strongly agree<br>
+                Acceptance criteria: 1-3 Negative / 4 Neutral / 5-7 Positive
+                <br>
+                <br>
+                Please provide any final comments on the usability and safety pertaining to the tasks performed today
+            </li>
+        </ul>
+        <br>    
+
+        <h4>Results</h4>
+        <p>The Likert scores for each task were averaged and evaluated against their respective acceptance criteria. The
+            averages ranged between 5.42 and 7. There were no significant usability issues identified as all participants were
+            able to complete their tasks associated with their roles, with varying levels of ease. Feedback and overall
+            impressions on the MVCP provided by participants at the end of their session, along with the tasks that scored on
+            the lower end were used to inform improvements for future releases.
+        </p>        
+
+        <hr class="divider">
+
+        <h4>Thanks for reading! Jump into something else? &#129299</h4>
+        <div class="row">
+            <div class="column left50">
+                <a href="pages/savery.html">
+                    <div class="card">
+                        <img class="work-pic" src="../images/savery-cover.jpg" alt="A green app logo beside a shopping cart">
+                        <div class="card-container">
+                            <h4>Savery</h4>
+                            <p class="light-grey">
+                                Case study · App design · Collaborative project
+                            </p>
+                            <p>Integrating recipes, grocery offers, and expense tracking for an easier meal-planning experience.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column right50">
+                <a href="../pages/equippe.html">
+                    <div class="card">
+                        <img class="work-pic" src="../images/equippe-cover.jpg" alt="A navy blue app logo beside a teal face mask">
+                        <div class="card-container">
+                            <h4>EquiPPE</h4>
+                            <p class="light-grey">
+                                Case study · Product design · Independent project
+                            </p>
+                            <p>
+                                Directing PPE donations to essential organizations in need during the early stages of the COVID-19 pandemic.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="filler"></div>
+        <a class="in-text-link" href="../index.html#portfolio">&#8592  Portfolio</a>
+        <div class="filler"></div>
+        <div class="filler"></div>
+
+    </section>
+
+
+<footer>
+    <div class="content-wrap">
+        <h4 class="white-text letschat">
+            <nobr>Let's chat!</nobr>
+        </h4>
+        <div class="contact">
+            <a href="mailto:gthanvin@gmail.com"><img src="../images/email.png"></a>
+            <a href="https://linkedin.com/in/thanvin/" target="_blank"><img src="../images/linkedin.png"></a>
+            <a href="https://instagram.com/tgexplores/" target="_blank"><img src="../images/instagram.png"></a>
+        </div>
+        <p class="white-text copyright">
+            &#169 2023 Thanvin Giridhar
+        </p>
+    </div>
+</footer>
+
+<button onclick="topFunction()" id="backtotop">Top &#9757&#160;</button>
+
+<!--- Back to top btn JS --->
+
+<script>
+
+var mybutton = document.getElementById("backtotop");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+</body>
+
+</html>
